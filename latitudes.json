@@ -1,0 +1,21 @@
+{"ranges": [
+    {"midrange": -85, "range_text": "between 90S and 80S"},
+    {"midrange": -75, "range_text": "between 80S and 70S"},
+    {"midrange": -65, "range_text": "between 70S and 60S"},
+    {"midrange": -55, "range_text": "between 60S and 50S"},
+    {"midrange": -45, "range_text": "between 50S and 40S"},
+    {"midrange": -35, "range_text": "between 40S and 30S"},
+    {"midrange": -25, "range_text": "between 30S and 20S"},
+    {"midrange": -15, "range_text": "between 20S and 10S"},
+    {"midrange": -5, "range_text": "between 10S and 0S"},
+    {"midrange": 5, "range_text": "between 0S and 10N"},
+    {"midrange": 15, "range_text": "between 10N and 20N"},
+    {"midrange": 25, "range_text": "between 20N and 30N"},
+    {"midrange": 35, "range_text": "between 30N and 40N"},
+    {"midrange": 45, "range_text": "between 40N and 50N"},
+    {"midrange": 55, "range_text": "between 50N and 60N"},
+    {"midrange": 65, "range_text": "between 60N and 70N"},
+    {"midrange": 75, "range_text": "between 70N and 80N"},
+    {"midrange": 85, "range_text": "between 80N and 90N"}
+]}
+
