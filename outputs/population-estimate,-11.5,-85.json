@@ -1,0 +1,4 @@
+{"reasoning": "The timezone 'UTC-11:30' does not exist. Timezones range from UTC-12 to UTC+12, and the closest timezone to 'UTC-11:30' would be either UTC-12 or UTC-11, but neither of these timezones correspond to a specific region between 90S and 80S latitude. Additionally, the latitudes 'between 90S and 80S' fall within the Antarctic Circle, where there are no permanent residents or households, only temporary research stations.", 
+"major_cities": [], 
+"estimated_number_of_households": 0}
+

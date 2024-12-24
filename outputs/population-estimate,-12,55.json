@@ -1,0 +1,6 @@
+{
+  "reasoning": "The timezone 'UTC-12:00' is also known as Baker Island Time. This timezone is used only on Baker Island, which is an uninhabited atoll in the Pacific Ocean. The latitudes between 50N and 60N are located in the Northern Hemisphere, but Baker Island is actually located at 0°13′N latitude, far outside of this range. However, considering the intent might be to look for any landmass within these coordinates that could potentially have households, it's crucial to note that no permanently inhabited lands fall within both the specified timezone and the latitudinal range.",
+  "major_cities": [],
+  "estimated_number_of_households": 0
+}
+
