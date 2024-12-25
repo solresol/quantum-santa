@@ -1,0 +1,13 @@
+{
+    "reasoning": "The timezone 'UTC-06:00' corresponds to Central Standard Time (CST) in North America. The latitudes between 30N and 40N cover a significant portion of the United States, including parts of states such as Texas, Oklahoma, Kansas, Missouri, Arkansas, Tennessee, Kentucky, and others. Given that Santa's visits are typically associated with Christmas Eve and assuming he would visit households in this timezone during their nighttime hours on December 24th, it is reasonable to estimate the number of households based on population data.",
+    "major_cities": [
+        "Dallas",
+        "Oklahoma City",
+        "Kansas City",
+        "St. Louis",
+        "Nashville",
+        "Memphis"
+    ],
+    "estimated_number_of_households": 0
+}
+

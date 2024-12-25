@@ -1,0 +1,10 @@
+{
+  "reasoning": "The timezone 'UTC+00:00' corresponds to the Western European Time zone, but it also includes parts of the Atlantic Ocean and some islands in the North Atlantic. The latitudes between 20N and 30N fall within the tropics and subtropics, covering parts of West Africa, Western Sahara, Mauritania, Morocco, and the western part of the Sahara Desert. Given that Christmas is traditionally associated with Christian cultures and the regions mentioned have significant Muslim populations or are sparsely inhabited, there might be fewer households celebrating Christmas in these areas compared to more Christian-dominant regions. However, major cities like Dakar (Senegal), Nouakchott (Mauritania), and some parts of Morocco do have Christian communities.",
+  "major_cities": [
+    "Dakar",
+    "Nouakchott",
+    "El Aaiún"
+  ],
+  "estimated_number_of_households": 0
+}
+

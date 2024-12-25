@@ -1,0 +1,10 @@
+{
+    "reasoning": "The timezone 'UTC+03:00' includes parts of Europe and Africa. However, the latitudes 'between 40N and 50N' specifically focus on a region that covers parts of Southeastern Europe, Western Asia, and the Middle East. Given the diversity of cultures and religious beliefs in this area, not all households would be celebrating Christmas or believing in Santa Claus. Nevertheless, for the sake of estimation, we'll consider countries where Christmas is celebrated to some extent. Major cities within this timezone and latitude range include Istanbul (Turkey), Athens (Greece), and possibly parts of Eastern Europe like Romania and Bulgaria.",
+    "major_cities": [
+        "Istanbul",
+        "Athens",
+        "Bucharest"
+    ],
+    "estimated_number_of_households": 0
+}
+

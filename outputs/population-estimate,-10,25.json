@@ -1,0 +1,8 @@
+{
+    "reasoning": "The timezone UTC-10:00 corresponds to the Hawaii-Aleutian Time Zone. The latitudes between 20N and 30N in this timezone would include the Hawaiian Islands, but not any part of the Aleutian Islands as they are at higher latitudes. Given that Santa's visits typically occur on Christmas Eve, which is during the winter season in the Northern Hemisphere, and considering the tropical to semi-tropical climate of Hawaii, it's plausible that households in this region could be visited by Santa. However, without exact population data or the number of households within these specific latitudes, an estimate would need to consider the total population of Hawaii and then narrow it down based on the geographic area between 20N and 30N.",
+    "major_cities": [
+        "Honolulu"
+    ],
+    "estimated_number_of_households": 200000
+}
+

@@ -1,0 +1,11 @@
+{
+  "reasoning": "The timezone UTC+03:00 spans across parts of Eastern Europe, the Middle East, and Africa. However, when considering the latitudes between 20N and 30N, we are looking at a region that includes parts of the Middle East and North Africa. Given that Santa's visits are typically associated with Christian households celebrating Christmas, and this region is predominantly Muslim, the number of households celebrating Christmas would be significantly lower compared to other parts of the world. Additionally, many countries in this timezone and latitude range have hot desert climates, which might further reduce the number of households traditionally celebrating Christmas.",
+  "major_cities": [
+    "Riyadh", 
+    "Baghdad", 
+    "Kuwait City", 
+    "Doha"
+  ],
+  "estimated_number_of_households": 0
+}
+

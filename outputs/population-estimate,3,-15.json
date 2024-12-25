@@ -1,0 +1,9 @@
+{
+    "reasoning": "The timezone UTC+03:00 and the latitudes between 20S and 10S correspond to a region in the southern hemisphere, primarily over the ocean. The majority of this area is covered by the Indian Ocean, with some islands and coastal regions of Africa and Asia. Given that Santa's visits are typically associated with land-based human populations, especially during Christmas which is celebrated in winter in the Northern Hemisphere but summer in the Southern Hemisphere, the number of households he would need to visit in this specific timezone and latitude range is minimal to none because the population density in these areas is very low.",
+    "major_cities": [
+        "Antananarivo, Madagascar",
+        "Toamasina, Madagascar"
+    ],
+    "estimated_number_of_households": 0
+}
+

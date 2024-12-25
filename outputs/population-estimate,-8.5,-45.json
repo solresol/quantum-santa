@@ -1,0 +1,6 @@
+{
+  "reasoning": "The timezone UTC-08:30 does not exist. Timezones are usually offset from UTC by whole or half hours. Additionally, the latitudes between 50S and 40S correspond to a region in the southern hemisphere, mostly over the ocean. This area includes parts of the Southern Ocean and some islands, but no major landmasses where households would be densely populated.",
+  "major_cities": [],
+  "estimated_number_of_households": 0
+}
+

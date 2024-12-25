@@ -1,0 +1,6 @@
+{
+  "reasoning": "The timezone UTC-08:45 does not exist. Timezones are usually specified in whole hours or half-hours, and there is no country or region that uses a timezone offset of 8 hours and 45 minutes from Coordinated Universal Time (UTC). Additionally, the latitudes between 70N and 80N fall within the Arctic Circle, which is largely uninhabited due to its harsh climate. The few permanent residents in this region are mostly found in research stations or small indigenous communities.",
+  "major_cities": [],
+  "estimated_number_of_households": 0
+}
+

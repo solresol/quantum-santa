@@ -1,0 +1,6 @@
+{
+  "reasoning": "The timezone 'UTC+00:20' does not exist. Timezones are typically offset from Coordinated Universal Time (UTC) by whole hours or half-hours, but there is no official timezone with a 20-minute offset. Furthermore, the latitudes between 60S and 50S are in the Southern Ocean, which does not have any permanent population centers or households.",
+  "major_cities": [],
+  "estimated_number_of_households": 0
+}
+

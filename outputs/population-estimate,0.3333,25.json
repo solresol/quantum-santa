@@ -1,0 +1,6 @@
+{
+  "reasoning": "The timezone 'UTC+00:20' does not exist. Time zones are usually offset from Coordinated Universal Time (UTC) by whole hours or half-hours, and there is no known timezone with an offset of 20 minutes. Additionally, the region between latitudes 20N and 30N spans across several time zones, including UTC-8 to UTC+5, depending on the longitude.",
+  "major_cities": [],
+  "estimated_number_of_households": 0
+}
+

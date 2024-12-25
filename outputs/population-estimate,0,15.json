@@ -1,0 +1,9 @@
+{
+  "reasoning": "The timezone 'UTC+00:00' includes parts of the Atlantic Ocean and Western Africa. The latitudes between 10N and 20N in this timezone cover areas that are mostly desert or sparsely populated in Western Africa, such as parts of Mauritania, Mali, and Senegal. However, there are some significant cities within these boundaries.",
+  "major_cities": [
+    "Nouakchott", 
+    "Timbuktu"
+  ],
+  "estimated_number_of_households": 0
+}
+

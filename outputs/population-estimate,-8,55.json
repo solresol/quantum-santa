@@ -1,0 +1,6 @@
+{
+  "reasoning": "The timezone UTC-08:00 corresponds to the Pacific Time Zone in North America. The latitudes between 50N and 60N in this timezone would include parts of western Canada, specifically the province of British Columbia, and possibly a small portion of the northwestern United States, such as parts of Washington state and Alaska. However, given that Santa's visits are typically associated with inhabited areas where children reside, we must consider the population density and presence of households in these regions. The major cities within this range include Vancouver and Victoria in British Columbia, Canada, which have significant populations.",
+  "major_cities": ["Vancouver", "Victoria"],
+  "estimated_number_of_households": 1500000
+}
+

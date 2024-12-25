@@ -1,0 +1,9 @@
+{
+  "reasoning": "The timezone UTC-02:00 is primarily located in the Atlantic Ocean, with some islands and a small portion of the eastern coast of Brazil and Uruguay. The latitudes between 10S and 0S are mostly ocean, but do include parts of northeastern Brazil. However, since Santa's visits are typically associated with Christmas celebrations which require human settlements, we can estimate based on population centers within this region.",
+  "major_cities": [
+    "Fernando de Noronha (Brazil)",
+    "Natal (Brazil)"
+  ],
+  "estimated_number_of_households": 100000
+}
+

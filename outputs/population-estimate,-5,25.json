@@ -1,0 +1,13 @@
+{
+    "reasoning": "The timezone 'UTC-05:00' spans across the eastern part of the United States, the Caribbean, and parts of Central and South America. However, when narrowing it down to latitudes between 20N and 30N, we are primarily looking at areas in the southeastern United States, the Bahamas, and parts of Cuba and Hispaniola (Haiti and the Dominican Republic). Since Santa's visits are traditionally associated with Christmas Eve and the idea of visiting households is linked to human habitation, it's essential to consider populated areas within these geographical constraints. Given that the question does not specify further details about the nature of 'households' or any exceptions, we'll proceed under the general assumption that includes all residential units where people might expect a visit from Santa.",
+    "major_cities": [
+        "Nassau, Bahamas",
+        "Miami, Florida",
+        "Key West, Florida",
+        "Santiago de Cuba, Cuba",
+        "Port-au-Prince, Haiti",
+        "Santo Domingo, Dominican Republic"
+    ],
+    "estimated_number_of_households": 0
+}
+

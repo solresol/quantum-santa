@@ -1,0 +1,10 @@
+{
+  "reasoning": "The timezone UTC+02:00 includes parts of Europe and Africa. However, the latitudes between 50N and 60N are mostly covered by countries in Northern Europe. Some areas within this range may have limited or no permanent residents due to harsh climate conditions or remote locations. Major cities like Oslo (Norway), Stockholm (Sweden), and Helsinki (Finland) fall within or near these latitudes, but the population density decreases significantly as you move towards the northern parts of these countries. Assuming Santa visits households with children, we would need to consider the population distribution and urban vs. rural areas.",
+  "major_cities": [
+    "Oslo",
+    "Stockholm",
+    "Helsinki"
+  ],
+  "estimated_number_of_households": 1000000
+}
+

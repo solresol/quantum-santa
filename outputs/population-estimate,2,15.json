@@ -1,0 +1,10 @@
+{
+    "reasoning": "The timezone 'UTC+02:00' includes parts of Europe, Africa, and Asia. However, the latitudes 'between 10N and 20N' are primarily located in the African continent and parts of the Middle East, where Christmas is not widely celebrated or does not involve the tradition of Santa Claus visiting households. Given that Santa's visits are traditionally associated with Christian celebrations of Christmas, the number of households he would need to visit in this region for this purpose would be minimal to none.",
+    "major_cities": [
+        "Khartoum", 
+        "Juba", 
+        "Asmara"
+    ],
+    "estimated_number_of_households": 0
+}
+

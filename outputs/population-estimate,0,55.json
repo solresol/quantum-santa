@@ -1,0 +1,12 @@
+{
+    "reasoning": "The timezone 'UTC+00:00' spans across the Atlantic Ocean, and parts of western Europe and Africa. The latitudes between 50N and 60N fall within Western Europe, specifically in countries such as the United Kingdom, Ireland, France, Belgium, and the Netherlands. However, Santa's visits are typically associated with landmasses where human populations reside, particularly during Christmas Eve. Given this geographical range, there would indeed be households to visit.",
+    "major_cities": [
+        "London",
+        "Dublin",
+        "Paris",
+        "Brussels",
+        "Amsterdam"
+    ],
+    "estimated_number_of_households": 25000000
+}
+

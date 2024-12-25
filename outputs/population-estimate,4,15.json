@@ -1,0 +1,11 @@
+{
+  "reasoning": "The timezone UTC+04:00 spans across several countries, but the latitudes between 10N and 20N limit the area to parts of the Middle East and Africa. However, Christmas is not widely celebrated in many of these regions due to the dominant Muslim population. Additionally, Santa's visits are typically associated with Christian households. Therefore, it's likely that there would be very few, if any, households for Santa to visit in this timezone and latitude range.",
+  "major_cities": [
+    "Muscat, Oman",
+    "Dubai, UAE",
+    "Abu Dhabi, UAE",
+    "Riyadh is slightly out of the latitude range but Mecca and Jeddah are within the range in Saudi Arabia"
+  ],
+  "estimated_number_of_households": 0
+}
+

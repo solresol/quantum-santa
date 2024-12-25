@@ -1,0 +1,13 @@
+{
+  "reasoning": "The timezone 'UTC-05:00' corresponds to Eastern Standard Time (EST) in North America. The latitudes between 40N and 50N cover a significant portion of the northeastern United States and southeastern Canada. This region includes major cities such as New York City, Boston, Philadelphia, and Toronto. Given the population density and urbanization in this area, it is reasonable to assume that Santa would have to visit a substantial number of households. However, estimating the exact number requires data on population density, household size, and other demographic factors.",
+  "major_cities": [
+    "New York City",
+    "Boston",
+    "Philadelphia",
+    "Toronto",
+    "Montreal",
+    "Baltimore"
+  ],
+  "estimated_number_of_households": 10000000
+}
+

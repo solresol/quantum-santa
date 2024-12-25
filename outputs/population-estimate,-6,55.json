@@ -1,0 +1,14 @@
+{
+    "reasoning": "The timezone 'UTC-06:00' corresponds to the Central Time Zone in North America. The latitudes between 50N and 60N cover parts of Canada, including provinces such as Manitoba, Saskatchewan, and Alberta, as well as parts of the United States, specifically the states of Montana, North Dakota, and Minnesota. Given that Santa's visits are traditionally associated with Christmas Eve and are based on the idea of delivering gifts to children in residential areas, we must consider the population density and urbanization within these regions. However, without specific data on household numbers within this exact timezone and latitude range, an estimation requires considering major cities within this area and their approximate populations.",
+    "major_cities": [
+        "Winnipeg, Manitoba, Canada",
+        "Regina, Saskatchewan, Canada",
+        "Saskatoon, Saskatchewan, Canada",
+        "Edmonton, Alberta, Canada (partially outside the specified latitude but within the timezone)",
+        "Minneapolis, Minnesota, USA",
+        "St. Paul, Minnesota, USA",
+        "Fargo, North Dakota, USA"
+    ],
+    "estimated_number_of_households": 0
+}
+

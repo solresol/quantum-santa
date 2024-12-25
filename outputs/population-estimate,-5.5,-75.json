@@ -1,0 +1,6 @@
+{
+    "reasoning": "The timezone 'UTC-05:30' is not a valid timezone. Timezones range from UTC-12 to UTC+12, and the offset is usually in whole hours or 30 minutes. Additionally, there are no permanent human settlements between latitudes 80S and 70S, as this region falls within Antarctica, which has no permanent residents, only temporary scientists and researchers at various stations.",
+    "major_cities": [],
+    "estimated_number_of_households": 0
+}
+

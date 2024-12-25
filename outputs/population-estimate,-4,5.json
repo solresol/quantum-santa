@@ -1,0 +1,11 @@
+{
+    "reasoning": "The timezone 'UTC-04:00' includes parts of the Atlantic Ocean and some islands in the Caribbean. The latitudes between 0S and 10N cover a region near the equator, mostly over water. Given that Santa's visits are typically associated with land-based human populations, especially during Christmas which is celebrated in December when these regions are not known for having significant permanent residents outside of a few islands, it is reasonable to estimate that there would be very few if any households for Santa to visit in this specific geographic and temporal context. However, considering the presence of some island nations and territories within this zone, such as parts of the Caribbean, there could indeed be some households.",
+    "major_cities": [
+        "Basseterre (St. Kitts and Nevis)",
+        "Charlestown (Nevis)",
+        "Road Town (British Virgin Islands)",
+        "The Valley (Anguilla)"
+    ],
+    "estimated_number_of_households": 15000
+}
+

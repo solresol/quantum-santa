@@ -1,0 +1,4 @@
+{"reasoning": "The timezone 'UTC-01:30' does not exist. Timezones range from UTC-12 to UTC+12, with some timezones having offsets of 30 or 45 minutes. However, there is no timezone with an offset of -01:30. Additionally, the latitudes between 80N and 90N are within the Arctic Circle and are largely composed of ice and water, with very few permanent human settlements.", 
+"major_cities": [], 
+"estimated_number_of_households": 0}
+

@@ -1,0 +1,10 @@
+{
+    "reasoning": "The timezone 'UTC-09:00' corresponds to the Alaska Time Zone. The latitudes between 40N and 50N in this timezone would cover parts of southern Alaska. Since Santa's visits are typically associated with populated areas where children reside, we need to consider the presence of households in these regions. Given the sparse population in southern Alaska within the specified latitude range, there are indeed some households but they are relatively few.",
+    "major_cities": [
+        "Juneau",
+        "Sitka",
+        "Petersburg"
+    ],
+    "estimated_number_of_households": 15000
+}
+

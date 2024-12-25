@@ -1,0 +1,10 @@
+{
+    "reasoning": "The timezone 'UTC-04:00' spans across the Atlantic Ocean and includes parts of the eastern Caribbean Sea. The latitudes between 10N and 20N in this timezone cover areas that are mostly ocean or small islands, with some territories belonging to various countries. Given the geographical constraints and the fact that Santa's visits are typically associated with landmasses where human populations reside, it is reasonable to estimate a very low number of households in these areas that would require a visit from Santa.",
+    "major_cities": [
+        "St. John's, Antigua and Barbuda",
+        "The Valley, Anguilla",
+        "Road Town, British Virgin Islands"
+    ],
+    "estimated_number_of_households": 0
+}
+

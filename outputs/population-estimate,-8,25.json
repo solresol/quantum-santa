@@ -1,0 +1,6 @@
+{
+  "reasoning": "The timezone 'UTC-08:00' corresponds to the Pacific Time Zone in North America. The latitudes between 20N and 30N in this timezone would include parts of the western United States, specifically areas in California, Nevada, Arizona, and Mexico's Baja California. However, since Santa is a figure associated with delivering gifts on Christmas Eve, primarily to children in homes celebrating Christmas, and considering that his visits are based on the traditional Christmas celebrations which occur when it is night time (and thus during the winter months in the Northern Hemisphere), we must consider if there are any households in this region. Given the vast desert landscapes and the fact that a significant portion of this area might not be densely populated with households, especially in the more southern parts of these latitudes, an estimation requires considering urban areas.",
+  "major_cities": ["Los Angeles", "San Diego", "Tijuana", "Phoenix"],
+  "estimated_number_of_households": 0
+}
+

@@ -1,0 +1,10 @@
+{
+    "reasoning": "The timezone 'UTC+04:00' includes parts of Europe and Asia. However, the latitudes 'between 50N and 60N' limit the area to a relatively small region in Eastern Europe and Western Asia. This region includes parts of Russia, but it does not include any densely populated areas with high numbers of households that would typically celebrate Christmas or have Santa visit. Furthermore, many countries in this timezone do not traditionally celebrate Christmas with visits from Santa Claus.",
+    "major_cities": [
+        "Astrakhan",
+        "Izhevsk",
+        "Perm"
+    ],
+    "estimated_number_of_households": 0
+}
+

@@ -1,0 +1,4 @@
+{"reasoning": "The timezone 'UTC-01:30' is not a valid timezone. Timezones range from UTC-12 to UTC+12 in 30-minute increments, but there is no 'UTC-01:30'. Additionally, the latitudes 'between 80S and 70S' are located in Antarctica, which has no permanent residents or households, only temporary scientists and researchers at various stations.", 
+"major_cities": [], 
+"estimated_number_of_households": 0}
+

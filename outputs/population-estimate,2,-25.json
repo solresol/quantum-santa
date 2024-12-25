@@ -1,0 +1,10 @@
+{
+  "reasoning": "The timezone UTC+02:00 includes parts of Africa and Europe. However, the latitudes between 30S and 20S are located in the Southern Hemisphere, primarily over the ocean and some parts of South America, but also including a small portion of southern Africa. Given that Santa's visits are traditionally associated with Christmas Eve deliveries to children, we need to consider where there are inhabited areas within these constraints. The majority of this latitude range is over water or sparsely populated in the Southern Ocean and the southern tip of Africa. However, some parts of South America and a small segment of southern Africa do fall within this range.",
+  "major_cities": [
+    "Cape Town does not fall exactly within these latitudes but is nearby",
+    "Parts of Namibia and Botswana might be considered but are mostly outside the specified latitudes",
+    "In South America, cities like Porto Alegre in Brazil and parts of Uruguay could fit the latitude criteria"
+  ],
+  "estimated_number_of_households": 0
+}
+

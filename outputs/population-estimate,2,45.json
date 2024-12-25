@@ -1,0 +1,4 @@
+{"reasoning": "The timezone UTC+02:00 spans across parts of Europe, Africa, and Asia. However, the latitudes between 40N and 50N are primarily located in the Northern Hemisphere, covering areas such as Southern Europe, Western Asia, and North Africa. To estimate the number of households Santa would have to visit, we need to consider the population density and urbanization in these regions. Many countries in this timezone and latitude range have significant populations, but not all may celebrate Christmas or believe in Santa Claus, which could affect the number of visits needed.", 
+"major_cities": ["Athens", "Istanbul", "Cairo", "Beirut", "Damascus"], 
+"estimated_number_of_households": 0}
+

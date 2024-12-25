@@ -1,0 +1,6 @@
+{
+  "reasoning": "The timezone 'UTC-08:45' does not exist as a standard timezone. Standard timezones are usually offset from UTC by whole hours or half hours, and the closest to this would be UTC-09:00 or UTC-08:00. Furthermore, the latitudes between 90S and 80S cover parts of Antarctica, which has no permanent residents, only temporary scientists and researchers at various stations.",
+  "major_cities": [],
+  "estimated_number_of_households": 0
+}
+
