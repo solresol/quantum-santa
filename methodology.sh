@@ -21,8 +21,8 @@ do
     offset=$(jq  ".timezones[$j].offset" < timezones-include-fraction.json)
     for i in $(seq 0 17)
     do
-	midrange=$(jq ".ranges[$i].midrange" < latitudes.json)
-	range_text=$(jq ".ranges[$i].range_text" < latitudes.json)
+	midrange=$(jq -r ".ranges[$i].midrange" < latitudes.json)
+	range_text=$(jq -r ".ranges[$i].range_text" < latitudes.json)
 	output_name="outputs/population-estimate,$offset,$midrange.json"
 	targets="$targets $output_name"
 	prompt="Estimate the number of households that Santa would have to visit in the timezone $timezone in the latitudes $range_text. The answer might well be none. Output in JSON format a dictionary with keys \"reasoning\" (some text explaining your answer), \"major_cities\" (a list of important cities), \"estimated_number_of_households\" (an integer)"
