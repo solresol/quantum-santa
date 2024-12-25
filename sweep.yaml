@@ -1,0 +1,12 @@
+rules:
+  - "admin/printed-mailinglist.txt has one family or person per line. They can be commented out with a # if someone is away temporarily."
+
+branch: 'main'
+gha_enabled: True
+description: 'solresol/quantum-santa is a set of programs to populate and read outputs/ and santa_routes.db . Almost everything is a separate standalone program. methodology.sh is the sequencing code.'
+
+# This sets whether to create pull requests as drafts. If this is set to True, then all pull requests will be created as drafts and GitHub Actions will not be triggered.
+draft: False
+
+# This is a list of directories that Sweep will not be able to edit.
+blocked_dirs: []
