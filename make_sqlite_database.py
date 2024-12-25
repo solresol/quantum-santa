@@ -34,6 +34,7 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
     # Create table if it doesn't exist
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS santa_visits (
+            timezone_offset REAL,
             latitude REAL,
             longitude REAL,
             estimated_number_of_households INTEGER
@@ -59,8 +60,8 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
                 
                 # Insert into database
                 cursor.execute(
-                    'INSERT INTO santa_visits (latitude, longitude, estimated_number_of_households) VALUES (?, ?, ?)',
-                    (latitude, longitude, households)
+                    'INSERT INTO santa_visits (timezone_offset, latitude, longitude, estimated_number_of_households) VALUES (?, ?, ?, ?)',
+                    (timezone_offset, latitude, longitude, households)
                 )
                 
             except (ValueError, json.JSONDecodeError, KeyError) as e:
