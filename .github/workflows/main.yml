@@ -49,6 +49,19 @@ jobs:
       run: |
         python make_sqlite_database.py outputs
     - name: Verify Git configuration
+    - name: Check for detached HEAD and create branch if necessary
+      run: |
+        if [ "$(git rev-parse --abbrev-ref HEAD)" = "HEAD" ]; then
+          branch_name="gha-fix-$(date +%s)"
+          git switch -c $branch_name
+        fi
+        chmod +x methodology.sh
+        ./methodology.sh
+
+    - name: Run database script
+      run: |
+        python make_sqlite_database.py outputs
+    - name: Verify Git configuration
       run: |
         git config --list || echo "Failed to list git config"
     - name: Set up Git
