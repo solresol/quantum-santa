@@ -3,6 +3,11 @@ name: Run make_sqlite_database
 on:
   push:
   pull_request:
+    paths:
+      - 'make_sqlite_database.py'
+      - 'worldmap.py'
+      - 'outputs/*.json'
+      - '.github/workflows/run_script.yml'
 
 jobs:
   run-script:
@@ -14,26 +19,3 @@ jobs:
 
     - name: Set up Python
       uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-
-    - name: Run make_sqlite_database script
-      run: python make_sqlite_database.py outputs/
-    - name: Run worldmap script
-      run: python worldmap.py
-    - name: Commit and push worldmap.png
-      env:
-        GH_PAT: ${{ secrets.GH_PAT }}
-      run: |
-        git config --global user.name "github-actions"
-        git fetch origin
-        git checkout ${{ github.ref }}
-        git config --global user.email "github-actions@github.com"
-        git add worldmap.png
-        git commit -m "Add generated worldmap.png [skip ci]" || echo "No changes to commit"
-        git push https://${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git
