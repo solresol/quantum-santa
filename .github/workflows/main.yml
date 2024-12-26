@@ -16,12 +16,12 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
       with:
-        ref: main
+        fetch-depth: 0
 
     - name: Set up Git
       run: |
         git config --global user.name "github-actions"
-        git config --global user.email "github-actions@users.noreply.github.com"
+        git config --global user.email "github-actions@github.com"
 
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -49,10 +49,4 @@ jobs:
     - name: Push changes to new branch
       run: |
         git commit -am "Automated changes by GitHub Actions"
-        git push origin temp-branch
-        git status || { echo "Git operation failed"; exit 1; }
-        
-    - name: Push changes to new branch
-      run: |
-        git commit -am "Automated changes by GitHub Actions" || echo "Nothing to commit"
-        git push origin HEAD:temp-branch || echo "Push failed"
+        git push origin HEAD:$(git rev-parse --abbrev-ref HEAD) || echo "Push failed"
