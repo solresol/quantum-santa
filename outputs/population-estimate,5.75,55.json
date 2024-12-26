@@ -1,0 +1,6 @@
+{
+  "reasoning": "The timezone UTC+05:45 is observed in Nepal, and the latitudes between 50N and 60N are located at high northern latitudes. However, Nepal's latitude ranges from approximately 26N to 31N, which falls outside of the specified range. Therefore, it's unlikely that Santa would have to visit any households in this timezone within the given latitudes.",
+  "major_cities": ["Kathmandu"],
+  "estimated_number_of_households": 0
+}
+

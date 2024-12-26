@@ -1,0 +1,12 @@
+{
+  "reasoning": "The timezone 'UTC+05:30' corresponds to India's time zone. The latitudes between 30N and 40N cover a significant portion of the country, including major cities like Delhi, Jaipur, and parts of Uttar Pradesh. However, Christmas is not widely celebrated in India as it is a predominantly Hindu country with a small Christian population. Assuming Santa only visits households that celebrate Christmas, we can estimate the number of households based on the Christian population in these regions.",
+  "major_cities": [
+    "Delhi",
+    "Jaipur",
+    "Kanpur",
+    "Lucknow",
+    "Varanasi"
+  ],
+  "estimated_number_of_households": 0
+}
+

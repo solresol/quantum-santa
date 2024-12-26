@@ -1,0 +1,13 @@
+{
+  "reasoning": "The timezone UTC+05:30 corresponds to India's standard time zone. The latitudes between 10N and 20N in this region include parts of southern and central India. However, Santa Claus is a figure traditionally associated with Christmas and the delivery of gifts on Christmas Eve, which is celebrated by Christians around the world. Given that the majority of the population in India practices Hinduism, followed by significant minorities of Muslims, Sikhs, Buddhists, and others, with Christians making up a relatively small percentage, it's reasonable to assume that the number of households celebrating Christmas might be lower compared to other parts of the world with larger Christian populations. Nonetheless, there are indeed Christian communities in India, especially in regions like Kerala and Goa, but also in major cities across the country.",
+  "major_cities": [
+    "Mumbai",
+    "Pune",
+    "Hyderabad",
+    "Bangalore",
+    "Chennai",
+    "Kochi"
+  ],
+  "estimated_number_of_households": 0
+}
+
