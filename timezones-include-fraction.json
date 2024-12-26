@@ -24,7 +24,6 @@
         {"name": "UTC-01:30", "offset": -1.5},
         {"name": "UTC-01:00", "offset": -1},
         {"name": "UTC+00:00", "offset": 0},
-        {"name": "UTC+00:20", "offset": 0.3333}, 
         {"name": "UTC+01:00", "offset": 1},
         {"name": "UTC+02:00", "offset": 2},
         {"name": "UTC+03:00", "offset": 3},
