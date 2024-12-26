@@ -2,7 +2,17 @@ name: Run make_sqlite_database
 
 on:
   push:
+    paths:
+      - 'make_sqlite_database.py'
+      - 'worldmap.py'
+      - 'outputs/*.json'
+      - '.github/workflows/run_script.yml'
   pull_request:
+    paths:
+      - 'make_sqlite_database.py'
+      - 'worldmap.py'
+      - 'outputs/*.json'
+      - '.github/workflows/run_script.yml'
 
 jobs:
   run-script:
