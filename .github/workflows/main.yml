@@ -17,6 +17,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         fetch-depth: 0
+        ref: main
 
     - name: Set up Git
       run: |
@@ -50,3 +51,7 @@ jobs:
       run: |
         git commit -am "Automated changes by GitHub Actions"
         git push origin HEAD:$(git rev-parse --abbrev-ref HEAD) || echo "Push failed"
+        if [ "$(git rev-parse --abbrev-ref HEAD)" = "HEAD" ]; then
+          echo "Error: Still in detached HEAD state"
+          exit 1
+        fi
