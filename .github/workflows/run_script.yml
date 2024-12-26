@@ -26,3 +26,10 @@ jobs:
       run: python make_sqlite_database.py outputs/
     - name: Run worldmap script
       run: python worldmap.py
+    - name: Commit and push worldmap.png
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+        git add worldmap.png
+        git commit -m "Add generated worldmap.png"
+        git push
