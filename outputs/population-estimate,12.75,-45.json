@@ -1,0 +1,6 @@
+{
+  "reasoning": "The timezone 'UTC+12:45' is observed by the Chatham Islands, which are part of New Zealand. The latitudes between 50S and 40S include parts of the southern Pacific Ocean and some islands, but the only significant landmass in this region that observes the UTC+12:45 timezone is the Chatham Islands. Given their remote location and limited population, it's reasonable to estimate the number of households based on available data about these islands.",
+  "major_cities": ["Waitangi", "Te One"],
+  "estimated_number_of_households": 300
+}
+

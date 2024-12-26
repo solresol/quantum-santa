@@ -1,0 +1,6 @@
+{
+    "reasoning": "The timezone UTC+12:00 includes several Pacific island nations. However, the latitudes between 30S and 20S are relatively narrow and primarily cover ocean areas in the South Pacific. This region does include parts of New Zealand, specifically the northern part of the North Island, and some smaller islands. Given that Christmas is on December 25 and Santa's visits occur during the night, we need to consider where people live within these latitudes and time zone. Since most of this area is ocean, inhabited regions are limited.",
+    "major_cities": ["Auckland", "Whangarei"],
+    "estimated_number_of_households": 500000
+}
+

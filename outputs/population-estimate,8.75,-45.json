@@ -1,0 +1,6 @@
+{
+  "reasoning": "The timezone 'UTC+08:45' is not a standard timezone and seems to be fictional or incorrect. However, there is a timezone 'UTC+8:45' which is used in some parts of Western Australia, specifically in the town of Eucla. The latitudes 'between 50S and 40S' correspond to a region in the southern hemisphere, primarily covering parts of Australia and the Southern Ocean. Given that the only notable location using this offset is Eucla, and it falls within the specified latitude range, we will consider this for our estimate.",
+  "major_cities": ["Eucla"],
+  "estimated_number_of_households": 0
+}
+

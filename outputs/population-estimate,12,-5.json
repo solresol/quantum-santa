@@ -1,0 +1,9 @@
+{
+  "reasoning": "The timezone UTC+12:00 and the latitudes between 10S and 0S correspond to a region in the Pacific Ocean, specifically the islands of Kiribati, Tuvalu, and some other smaller island nations. Given the sparse population and limited land area in this region, the number of households is expected to be relatively small.",
+  "major_cities": [
+    "Tarawa",
+    "Funafuti"
+  ],
+  "estimated_number_of_households": 20000
+}
+

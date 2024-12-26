@@ -1,0 +1,6 @@
+{
+  "reasoning": "The timezone 'UTC+12:45' is used only in New Zealand, specifically in the Chatham Islands. However, the latitudes 'between 70N and 80N' are located in the Arctic region, which does not overlap with New Zealand or the Chatham Islands. The Chatham Islands are actually located between 43°S and 44°S latitude, which is far from the specified range. Therefore, there are no households that Santa would have to visit in the given timezone and latitudes.",
+  "major_cities": [],
+  "estimated_number_of_households": 0
+}
+

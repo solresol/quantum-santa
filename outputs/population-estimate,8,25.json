@@ -1,0 +1,10 @@
+{
+    "reasoning": "The timezone 'UTC+08:00' includes parts of Asia, specifically China and other regions. However, the latitudes 'between 20N and 30N' are mostly desert or rural areas in these countries. For example, in China, this range covers parts of the Gobi Desert and other sparsely populated areas. Given that Santa's visits are typically associated with populated areas where Christmas is celebrated, it's likely that there would be very few households to visit in this specific region.",
+    "major_cities": [
+        "Lanzhou",
+        "Yinchuan",
+        "Xi'an"
+    ],
+    "estimated_number_of_households": 0
+}
+

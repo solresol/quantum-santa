@@ -1,0 +1,12 @@
+{
+    "reasoning": "The timezone UTC+09:00 includes parts of Japan and South Korea. The latitudes between 30N and 40N in this timezone cover a significant portion of these countries, including major cities like Tokyo and Seoul. Given the high population density in these areas, it is reasonable to estimate that there are millions of households. However, since Santa's visitations are typically associated with Christian traditions and these regions have different predominant religions (Shintoism and Buddhism in Japan, Christianity but not predominantly Catholic or Protestant traditions that heavily celebrate Christmas in South Korea), the number of households celebrating Christmas in the traditional sense might be lower than in Western countries.",
+    "major_cities": [
+        "Tokyo",
+        "Seoul",
+        "Busan",
+        "Yokohama",
+        "Osaka"
+    ],
+    "estimated_number_of_households": 0
+}
+
