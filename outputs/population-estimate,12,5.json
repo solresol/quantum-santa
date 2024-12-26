@@ -1,0 +1,10 @@
+{
+    "reasoning": "The timezone UTC+12:00 includes several Pacific island nations. However, when narrowing it down to the latitudes between 0S and 10N, we find that this region primarily encompasses parts of the Pacific Ocean and a few small islands. The major landmasses in this timezone are not within these specific latitudes, but there are some island groups like Kiribati, Tuvalu, and the Marshall Islands that could have households. Given the sparse population density and the fact that Christmas might not be widely celebrated in all cultures within this region (or might be celebrated differently), estimating the exact number of households Santa would visit is challenging without specific data on Christian populations and their traditions.",
+    "major_cities": [
+        "Tarawa (Kiribati)",
+        "Funafuti (Tuvalu)",
+        "Majuro (Marshall Islands)"
+    ],
+    "estimated_number_of_households": 0
+}
+

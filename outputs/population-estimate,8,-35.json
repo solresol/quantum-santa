@@ -1,0 +1,8 @@
+{
+  "reasoning": "The timezone 'UTC+08:00' includes parts of Australia, China, Indonesia, Malaysia, the Philippines, Singapore, and Taiwan. However, when narrowing it down to latitudes between 40S and 30S, we are primarily looking at a region in the southern part of Western Australia, specifically around Perth and its surrounding areas, as well as some islands and coastal regions of Western Australia that fall within this latitude range. Given Santa's traditional visitation criteria (delivering gifts on Christmas Eve to children), the number of households he would need to visit can be estimated based on population density and household numbers in these regions.",
+  "major_cities": [
+    "Perth"
+  ],
+  "estimated_number_of_households": 800000
+}
+

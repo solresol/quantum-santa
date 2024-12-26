@@ -1,0 +1,9 @@
+{
+    "reasoning": "The timezone UTC+10:00 includes parts of Australia, Papua New Guinea, and some Pacific island nations. The latitudes between 30S and 20S fall within the eastern coast of Australia. However, Christmas is celebrated on December 25, which falls during summer in the Southern Hemisphere. Santa's visit is traditionally associated with winter and the night of December 24-25 in the Northern Hemisphere. Nevertheless, assuming the question refers to the number of households Santa would theoretically need to visit if he were to deliver gifts in this region on their Christmas Eve (December 24), we must consider that there are indeed populated areas within these coordinates.",
+    "major_cities": [
+        "Brisbane",
+        "Gold Coast"
+    ],
+    "estimated_number_of_households": 1700000
+}
+

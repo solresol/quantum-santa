@@ -1,0 +1,10 @@
+{
+  "reasoning": "The timezone UTC+08:00 includes parts of Asia, specifically China, Malaysia, the Philippines, Singapore, and Taiwan. However, the latitudes between 0S and 10N cover a region near the equator, which primarily includes countries in Southeast Asia such as Indonesia, Malaysia, and the Philippines. Given that Christmas is not widely celebrated in many Muslim-majority countries and some Buddhist countries within this region, the number of households celebrating Christmas might be significantly lower than in Christian-majority countries. Nevertheless, there are still significant Christian populations in countries like the Philippines. Therefore, estimating the exact number without specific data on Christian households in these regions is challenging.",
+  "major_cities": [
+    "Kuala Lumpur",
+    "Manila",
+    "Singapore"
+  ],
+  "estimated_number_of_households": 0
+}
+

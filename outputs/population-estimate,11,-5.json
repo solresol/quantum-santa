@@ -1,0 +1,9 @@
+{
+  "reasoning": "The timezone UTC+11:00 and the latitudes between 10S and 0S correspond to a region in the Pacific Ocean, specifically the Solomon Islands, Vanuatu, and parts of Australia's external territories. However, the majority of the landmass within this region is uninhabited or sparsely populated. Considering the requirement for Santa to visit households, we need to focus on areas with significant human population.",
+  "major_cities": [
+    "Honiara",
+    "Port Vila"
+  ],
+  "estimated_number_of_households": 150000
+}
+

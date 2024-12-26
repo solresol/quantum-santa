@@ -1,0 +1,11 @@
+{
+    "reasoning": "The timezone UTC+07:00 includes parts of Russia, China, and other countries. However, the latitudes between 30N and 40N in this timezone are primarily located in western China and parts of Mongolia and Russia. The region is sparsely populated, with limited urban areas. Considering Santa's traditional visitation criteria (e.g., Christian households), we must note that these regions have significant Muslim and Buddhist populations, which might not typically celebrate Christmas or expect visits from Santa.",
+    "major_cities": [
+        "Ürümqi",
+        "Lanzhou",
+        "Xining",
+        "Yinchuan"
+    ],
+    "estimated_number_of_households": 0
+}
+

@@ -1,0 +1,9 @@
+{
+    "reasoning": "The timezone UTC+07:00 corresponds to several countries, including Russia, China, and others. However, the specified latitudes between 50N and 60N fall within a region that is mostly uninhabited or very sparsely populated in these countries, particularly when considering areas that would be accessible for Santa's visit on Christmas Eve. Given the vast distances and harsh climates, it is likely that there are few to no households in this specific range.",
+    "major_cities": [
+        "Novosibirsk",
+        "Krasnoyarsk"
+    ],
+    "estimated_number_of_households": 0
+}
+
