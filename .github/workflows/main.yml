@@ -28,10 +28,13 @@ jobs:
       run: |
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@users.noreply.github.com"
-
+    - name: Run methodology script
+      run: |
+        chmod +x methodology.sh
+        ./methodology.sh
     - name: Perform additional Git operations
       run: |
         # Example operation: commit changes
         git add .
-        git commit -m "Automated commit"
+        git diff-index --quiet HEAD || git commit -m "Update data files"
         git push origin $(git rev-parse --abbrev-ref HEAD)
