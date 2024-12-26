@@ -6,17 +6,18 @@ import sqlite3
 import re
 from typing import Tuple
 
-def parse_filename(filename: str) -> Tuple[float, float]:
-    """Extract longitude and latitude from filename."""
+def parse_filename(filename: str) -> Tuple[float, float, float]:
+    """Extract timezone offset, calculated longitude, and latitude from filename."""
     # Using regex to extract the coordinates
     pattern = r'population-estimate,([^,]+),([^.]+)\.json'
     match = re.match(pattern, filename)
     if not match:
         raise ValueError(f"Invalid filename format: {filename}")
     
-    longitude = float(match.group(1))  # timezone offset approximating longitude
+    timezone_offset = float(match.group(1))
+    calculated_longitude = timezone_offset * 15
     latitude = float(match.group(2))
-    return longitude, latitude
+    return timezone_offset, calculated_longitude, latitude
 
 def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
     """
@@ -33,6 +34,7 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
     # Create table if it doesn't exist
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS santa_visits (
+            timezone_offset REAL,
             latitude REAL,
             longitude REAL,
             estimated_number_of_households INTEGER
@@ -47,7 +49,7 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
         if filename.startswith('population-estimate') and filename.endswith('.json'):
             try:
                 # Parse coordinates from filename
-                longitude, latitude = parse_filename(filename)
+                timezone_offset, longitude, latitude = parse_filename(filename)
                 
                 # Read and parse JSON file
                 with open(os.path.join(directory_path, filename), 'r') as f:
@@ -58,8 +60,8 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
                 
                 # Insert into database
                 cursor.execute(
-                    'INSERT INTO santa_visits (latitude, longitude, estimated_number_of_households) VALUES (?, ?, ?)',
-                    (latitude, longitude, households)
+                    'INSERT INTO santa_visits (timezone_offset, latitude, longitude, estimated_number_of_households) VALUES (?, ?, ?, ?)',
+                    (timezone_offset, latitude, longitude, households)
                 )
                 
             except (ValueError, json.JSONDecodeError, KeyError) as e:
