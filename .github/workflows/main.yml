@@ -19,10 +19,11 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Set up Git
-      run: |
-        git config --global user.name "github-actions"
-        git config --global user.email "github-actions@github.com"
+    - name: Checkout branch
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.head_ref }}
+        fetch-depth: 0
 
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -45,3 +46,7 @@ jobs:
     - name: Verify Git configuration
       run: |
         git config --list || echo "Failed to list git config"
+    - name: Set up Git
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
