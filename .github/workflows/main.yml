@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Create new branch if in detached HEAD state
+      run: |
+        if [ "$(git rev-parse --abbrev-ref HEAD)" = "HEAD" ]; then
+          git switch -c new-branch
+        fi
+
+    - name: Configure Git user
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@users.noreply.github.com"
+
+    - name: Perform additional Git operations
+      run: |
+        # Example operation: commit changes
+        git add .
+        git commit -m "Automated commit"
+        git push origin $(git rev-parse --abbrev-ref HEAD)
