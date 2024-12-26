@@ -24,3 +24,5 @@ jobs:
 
     - name: Run make_sqlite_database script
       run: python make_sqlite_database.py outputs/
+    - name: Run worldmap script
+      run: python worldmap.py
