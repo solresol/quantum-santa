@@ -25,6 +25,11 @@ jobs:
         ref: ${{ github.head_ref }}
         fetch-depth: 0
 
+    - name: Set up Git user
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@users.noreply.github.com"
+    
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -49,4 +54,4 @@ jobs:
     - name: Set up Git
       run: |
         git config --global user.name "github-actions"
-        git config --global user.email "github-actions@github.com"
+        git config --global user.email "github-actions@users.noreply.github.com"
