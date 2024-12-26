@@ -1,0 +1,43 @@
+name: Python Application
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+    - name: Run methodology.sh
+      run: |
+        chmod +x methodology.sh
+        ./methodology.sh
+
+    - name: Run make_sqlite_database.py
+      run: |
+        python make_sqlite_database.py outputs
+
+    - name: Verify santa_routes.db exists
+      run: |
+        if [ ! -f santa_routes.db ]; then exit 1; fi
+
+    - name: Verify JSON files generated
+      run: |
+        if [ -z "$(ls -A outputs)" ]; then exit 1; fi
