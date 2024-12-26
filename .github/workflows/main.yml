@@ -19,16 +19,10 @@ jobs:
         fetch-depth: 0
         ref: main
 
-    - name: Set up Git
-      run: |
-        git config --global user.name "github-actions"
-        git config --global user.email "github-actions@github.com"
-
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
-
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
@@ -43,14 +37,20 @@ jobs:
       run: |
         chmod +x methodology.sh
         ./methodology.sh
-
+    - name: Configure Git
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+        git fetch --unshallow || echo "Repository already has full history"
+        git checkout main || echo "Already on main branch"
     - name: Run database script
       run: |
         python make_sqlite_database.py outputs
-    - name: Push changes to new branch
+    - name: Commit and push changes
       run: |
-        git commit -am "Automated changes by GitHub Actions"
-        git push origin HEAD:$(git rev-parse --abbrev-ref HEAD) || echo "Push failed"
+        git add .
+        git commit -m "Automated changes by GitHub Actions" || echo "Nothing to commit"
+        git push origin HEAD:$(git rev-parse --abbrev-ref HEAD) || echo "Push failed, possibly due to no changes"
         if [ "$(git rev-parse --abbrev-ref HEAD)" = "HEAD" ]; then
           echo "Error: Still in detached HEAD state"
           exit 1
