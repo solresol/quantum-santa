@@ -27,3 +27,4 @@ def plot_world_map():
 
 if __name__ == "__main__":
     plot_world_map()
+    plt.savefig('worldmap.png')
