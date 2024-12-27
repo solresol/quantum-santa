@@ -12,6 +12,8 @@ then
     git add latitudes.json
 fi
 
+#depend_on_makefile="Makefile"
+depend_on_makefile=""
 
 targets=""
 rules=""
@@ -25,8 +27,8 @@ do
 	range_text=$(jq -r ".ranges[$i].range_text" < latitudes.json)
 	output_name="outputs/population-estimate,$offset,$midrange.json"
 	targets="$targets $output_name"
-	prompt="Estimate the number of households that Santa would have to visit in the timezone $timezone in the latitudes $range_text. The answer might well be none. Output in JSON format a dictionary with keys \"reasoning\" (some text explaining your answer), \"major_cities\" (a list of important cities), \"estimated_number_of_households\" (an integer)"
-	rule="$output_name: Makefile\n\tollama run llama3.3 '$prompt' --format=json | tee $output_name\n\tgit add $output_name"
+	prompt="Pretend that Santa exists. Estimate the number of households that Santa would have to visit in the timezone $timezone in the latitudes $range_text. In your answer, consider how many cities there are, and then estimate the proportion of households where someone might believe in Santa. Output that number. The answer might be none if there are non cities, or if those cities are in countries without a Santa tradition. Output in JSON format a dictionary with keys \"reasoning\" (some text explaining your answer), \"major_cities\" (a list of important cities in that timezone and latitude range), \"estimated_number_of_households\" (an integer)"
+	rule="$output_name: $depend_on_makefile\n\tollama run llama3.3 '$prompt' --format=json | tee $output_name\n\tgit add $output_name"
 	rules="$rules\n$rule\n\n"
     done
 done
