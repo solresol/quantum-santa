@@ -68,10 +68,6 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
                 print(f"Error processing file {filename}: {str(e)}")
                 continue
     
-    # Commit changes and close connection
-    conn.commit()
-    conn.close()
-
 if __name__ == "__main__":
     import sys
     
@@ -89,19 +85,5 @@ if __name__ == "__main__":
         FROM santa_visits
         GROUP BY longitude;
     ''')
-    # Create view for population in timezone
-    cursor.execute('''
-        CREATE VIEW IF NOT EXISTS population_in_timezone AS
-        SELECT longitude, SUM(estimated_number_of_households) AS total_households
-        FROM santa_visits
-        GROUP BY longitude;
-    ''')
-    cursor.execute('''
-        CREATE VIEW IF NOT EXISTS population_in_timezone AS
-        SELECT longitude, SUM(estimated_number_of_households) AS total_households
-        FROM santa_visits
-        GROUP BY longitude;
-    ''')
-
     conn.commit()
     conn.close()
