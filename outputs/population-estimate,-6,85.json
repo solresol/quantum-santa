@@ -1,4 +1,6 @@
-{"reasoning": "The timezone UTC-06:00 and the latitudes between 80N and 90N are located in the Arctic region, which is largely uninhabited due to its harsh climate. The area falls within the Arctic Circle, where the sun does not rise above the horizon for part of the year, making it inhospitable for human habitation. As a result, there are no permanent residents or households in this region.", 
-"major_cities": [], 
-"estimated_number_of_households": 0}
+{
+  "reasoning": "The latitude range between 80N and 90N falls within the Arctic Circle, where the population is sparse. The UTC-06:00 timezone covers parts of Canada, specifically the territory of Nunavut, and a small portion of Greenland (Denmark). Given the remote nature of this region and the limited number of permanent residents, there are no major cities in this latitude range within the specified timezone that have a significant population believing in Santa. However, some research stations and indigenous communities might exist, potentially observing Christmas traditions, including believing in Santa. Yet, due to the extreme remoteness and lack of urban settlements, estimating households where someone believes in Santa is challenging.",
+  "major_cities": [],
+  "estimated_number_of_households": 0
+}
 

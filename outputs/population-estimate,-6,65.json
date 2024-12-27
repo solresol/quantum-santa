@@ -1,6 +1,12 @@
 {
-  "reasoning": "The timezone 'UTC-06:00' corresponds to Central Standard Time in North America. The latitudes between 60N and 70N are located in the Arctic Circle, which is largely uninhabited due to extreme climate conditions. While there may be some research stations or indigenous communities in this region, they would likely not be visited by Santa Claus as traditionally depicted, as these areas are very remote and sparsely populated.",
-  "major_cities": [],
-  "estimated_number_of_households": 0
+  "reasoning": "The timezone UTC-06:00 corresponds to Central Standard Time (CST) in North America. The latitudes between 60N and 70N fall within the Arctic Circle, covering parts of Canada, Alaska (USA), and Greenland. In this region, there are a few small cities and towns, but most of the area is sparsely populated. Given the remote nature of this region, the number of households where someone might believe in Santa is likely to be low. However, considering the presence of some indigenous communities and small settlements, it's possible that a fraction of households might still observe Christmas traditions, including believing in Santa.",
+  "major_cities": [
+    "Yellowknife, Canada",
+    "Whitehorse, Canada",
+    "Inuvik, Canada",
+    "Sisimiut, Greenland",
+    "Ilulissat, Greenland"
+  ],
+  "estimated_number_of_households": 5000
 }
 

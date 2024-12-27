@@ -1,0 +1,9 @@
+{
+  "reasoning": "The timezone UTC+07:00 corresponds to parts of Australia, Indonesia, and other countries. The latitudes between 50S and 40S fall within the southern part of Western Australia and South Australia in Australia, but primarily include parts of the Indian Ocean and southern regions of Australia where population density is low. Given this geographical range, there are limited cities with significant populations. However, considering the Christmas tradition and belief in Santa Claus, we'll focus on areas with European settlement history or significant Christian populations that might observe Christmas traditions similar to those in the Western world.",
+  "major_cities": [
+    "Perth", 
+    "Albany"
+  ],
+  "estimated_number_of_households": 150000
+}
+

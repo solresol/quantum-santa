@@ -1,0 +1,10 @@
+{
+  "reasoning": "The timezone UTC+06:00 includes parts of Asia, specifically countries such as Bangladesh, Bhutan, and Kazakhstan. The latitudes between 40N and 50N cover a significant portion of these countries. However, the tradition of believing in Santa Claus is not widespread in these regions compared to Western countries. Nevertheless, there are cities with significant Christian populations or expatriate communities where the tradition might be observed. Major cities in this timezone and latitude range include Dhaka (Bangladesh), Thimphu (Bhutan), and Almaty (Kazakhstan). Assuming a small percentage of households in these urban areas might celebrate Christmas with a belief in Santa, we can estimate the number of households.",
+  "major_cities": [
+    "Dhaka",
+    "Thimphu",
+    "Almaty"
+  ],
+  "estimated_number_of_households": 100000
+}
+

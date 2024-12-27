@@ -1,0 +1,6 @@
+{
+  "reasoning": "The timezone UTC+06:30 corresponds to the Cocos Islands, which are an Australian external territory in the Indian Ocean. The latitudes between 50S and 40S cover a significant portion of the Southern Hemisphere, including parts of Australia, New Zealand, and Antarctica. However, within the specified timezone and latitude range, there is only one inhabited island, West Island, with a small population. Given that the Cocos Islands have a population of around 600 people and are part of Australia, where Santa is a well-known figure, we can estimate the number of households where someone might believe in Santa.",
+  "major_cities": ["West Island"],
+  "estimated_number_of_households": 150
+}
+

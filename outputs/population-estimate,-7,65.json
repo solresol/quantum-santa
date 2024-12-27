@@ -1,10 +1,10 @@
 {
-    "reasoning": "The timezone 'UTC-07:00' corresponds to the Mountain Time Zone in North America. The latitudes between 60N and 70N fall within the Arctic Circle, which is largely uninhabited due to harsh climate conditions. However, there are some inhabited areas within this range, such as parts of Alaska (USA), Yukon, Northwest Territories, Nunavut, and Manitoba (Canada). Given the sparse population density in these regions, it's likely that Santa would have fewer households to visit compared to more populous areas.",
-    "major_cities": [
-        "Whitehorse, Yukon",
-        "Yellowknife, Northwest Territories",
-        "Inuvik, Northwest Territories"
-    ],
-    "estimated_number_of_households": 0
+  "reasoning": "The timezone 'UTC-07:00' corresponds to the Mountain Time Zone in North America. The latitudes between 60N and 70N fall within the Arctic Circle, covering parts of Alaska (USA), Yukon, Northwest Territories, Nunavut, and Manitoba (Canada). Given this geographic range, there are indeed cities and inhabited areas where Santa Claus is a part of the local culture, especially in areas with significant European-American influence. However, the population density in these regions is relatively low due to the harsh climate. Major cities in this region include Fairbanks, Alaska; Whitehorse, Yukon; and Yellowknife, Northwest Territories. Considering the prevalence of Christmas traditions among the populations in these areas, a reasonable estimate might assume that a significant proportion of households, especially those with children, would observe Santa Claus traditions.",
+  "major_cities": [
+    "Fairbanks",
+    "Whitehorse",
+    "Yellowknife"
+  ],
+  "estimated_number_of_households": 150000
 }
 

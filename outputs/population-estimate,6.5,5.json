@@ -1,0 +1,10 @@
+{
+  "reasoning": "The timezone UTC+06:30 corresponds to the Cocos Islands and Myanmar. Considering the latitudes between 0S and 10N, we focus on Myanmar. Major cities in this region include Yangon, Mandalay, and Naypyidaw. However, Christmas is not widely celebrated in Myanmar, as it is a predominantly Buddhist country. Nevertheless, there are Christian communities, particularly in urban areas, where the tradition of believing in Santa Claus might be observed. Assuming a small percentage of households in these cities might celebrate Christmas and believe in Santa, we estimate this number based on the population of major cities.",
+  "major_cities": [
+    "Yangon",
+    "Mandalay",
+    "Naypyidaw"
+  ],
+  "estimated_number_of_households": 15000
+}
+

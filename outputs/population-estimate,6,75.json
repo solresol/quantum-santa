@@ -1,0 +1,10 @@
+{
+  "reasoning": "The timezone UTC+06:00 includes parts of Russia, Kazakhstan, and Bangladesh. However, the latitudes between 70N and 80N are limited to the Arctic regions of Russia and Norway. In this range, there are only a few small cities and research stations. The majority of these locations do not have a significant number of households with children who believe in Santa. Considering the harsh climate and remote nature of these areas, it's likely that only a handful of households might be inhabited by people who celebrate Christmas with a belief in Santa Claus.",
+  "major_cities": [
+    "Longyearbyen (Svalbard, Norway)", 
+    "Barentsburg (Svalbard, Norway)", 
+    "Ny-Ålesund (Svalbard, Norway)"
+  ],
+  "estimated_number_of_households": 50
+}
+

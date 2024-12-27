@@ -1,0 +1,6 @@
+{
+  "reasoning": "The timezone UTC+06:30 corresponds to the Cocos Islands, which are an Australian external territory in the Indian Ocean. The latitudes between 30N and 40N cover a portion of the Northern Hemisphere, but since the Cocos Islands are located near the equator (around 12S latitude), they do not fall within this range. However, considering the instruction to pretend that Santa exists and estimate visits in the specified timezone regardless of geographical accuracy, we focus on the concept rather than strict adherence to geographical realities. Given the unique situation of the Cocos Islands, with a small population and being part of Australia, which does have a tradition of believing in Santa Claus, especially among its European-descended population and during Christmas celebrations, it's plausible some households might participate in this belief. The islands have a few settlements but no large cities.",
+  "major_cities": ["West Island", "Home Island"],
+  "estimated_number_of_households": 500
+}
+

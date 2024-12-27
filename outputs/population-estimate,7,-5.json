@@ -1,0 +1,12 @@
+{
+  "reasoning": "The timezone UTC+07:00 includes parts of Indonesia, Thailand, Vietnam, and other countries. However, the latitude range of 10S to 0S limits our area of interest primarily to Indonesia, specifically the islands of Java, Sumatra, and Bali. Considering the prevalence of Christmas celebrations in these regions, especially among Christian minorities and in tourist areas, it's reasonable to assume some households might observe Santa-related traditions. Major cities like Jakarta, Bandung, Semarang, Surabaya, and Denpasar have significant populations and could have notable numbers of households celebrating Christmas with beliefs in Santa.",
+  "major_cities": [
+    "Jakarta",
+    "Bandung",
+    "Semarang",
+    "Surabaya",
+    "Denpasar"
+  ],
+  "estimated_number_of_households": 100000
+}
+

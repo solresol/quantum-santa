@@ -1,0 +1,6 @@
+{
+  "reasoning": "The timezone UTC+06:30 corresponds to the Cocos Islands, which are an Australian external territory in the Indian Ocean. The latitudes between 30S and 20S include the entirety of the Cocos Islands. Given that the islands have a small population and are part of Australia, where Santa is a well-known figure, we can estimate the number of households where someone might believe in Santa. However, since the total population of the Cocos Islands is approximately 600 people, with about 120 households, and considering not all households may observe Christmas or believe in Santa, especially given the diverse cultural background of the residents (including Malay, which has a significant Muslim population), we need to adjust our estimate.",
+  "major_cities": ["West Island", "Home Island"],
+  "estimated_number_of_households": 20
+}
+

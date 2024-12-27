@@ -1,4 +1,6 @@
-{"reasoning": "The timezone UTC-07:00 corresponds to the Mountain Time Zone in North America. However, the latitudes between 80N and 90N are within the Arctic Circle, which is largely uninhabited due to extreme climate conditions. There are no permanent residents or households in this region, only temporary research stations and occasional visitors.", 
-"major_cities": [], 
-"estimated_number_of_households": 0}
+{
+  "reasoning": "The timezone UTC-07:00 corresponds to the Mountain Time Zone in North America. However, the latitudes between 80N and 90N are within the Arctic Circle and are largely uninhabited. There are no permanent cities or households in this region, only a few temporary research stations and indigenous communities. Since these communities do not have a traditional Christmas celebration with a Santa Claus figure, it's unlikely that anyone would be expecting a visit from Santa.",
+  "major_cities": [],
+  "estimated_number_of_households": 0
+}
 

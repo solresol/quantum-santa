@@ -1,4 +1,6 @@
-{"reasoning": "The latitude range 'between 90S and 80S' falls within the Antarctic region. There are no permanent residents or households in this area, only temporary scientists and researchers at various stations. The timezone 'UTC-06:00' is not applicable in this region as Antarctica does not follow traditional time zones. Therefore, there are no households for Santa to visit.", 
-"major_cities": [], 
-"estimated_number_of_households": 0}
+{
+  "reasoning": "The timezone UTC-06:00 corresponds to Central Standard Time in North America, but when considering latitudes between 90S and 80S, we are looking at a region in Antarctica. There are no permanent cities or households in this range, only research stations. Given that these are not traditional households and the majority of people residing there temporarily for scientific purposes are adults, it's unlikely anyone believes in Santa in the classical sense as children do. Therefore, the estimated number of households Santa would need to visit is zero.",
+  "major_cities": [],
+  "estimated_number_of_households": 0
+}
 

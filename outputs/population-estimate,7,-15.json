@@ -1,0 +1,12 @@
+{
+  "reasoning": "The timezone UTC+07:00 spans across several countries in Southeast Asia, including Indonesia, Thailand, and Vietnam. However, the latitude range of 20S to 10S limits the area to parts of Indonesia, specifically the islands of Java, Bali, and Lombok. Considering the cultural influence of Christianity in these regions is relatively low compared to other parts of the world, and Santa Claus is a figure primarily associated with Christian traditions, the number of households where someone might believe in Santa could be lower than in Western countries. Nonetheless, due to globalization and tourism, some awareness and celebration of Christmas, including beliefs about Santa, can still be found, especially in urban areas and among certain demographics like expatriates or international schools.",
+  "major_cities": [
+    "Bandung",
+    "Surabaya",
+    "Malang",
+    "Yogyakarta",
+    "Denpasar"
+  ],
+  "estimated_number_of_households": 100000
+}
+

@@ -1,0 +1,12 @@
+{
+  "reasoning": "The timezone UTC+07:00 and the latitudes between 40S and 30S cover parts of Australia, particularly Western Australia. While Christmas is celebrated in Australia, the tradition of believing in Santa Claus is more prevalent in certain demographics, such as families with young children. Considering the major cities within this region, we can estimate the number of households that might believe in Santa.",
+  "major_cities": [
+    "Perth",
+    "Mandurah",
+    "Bunbury",
+    "Geraldton",
+    "Kalgoorlie"
+  ],
+  "estimated_number_of_households": 250000
+}
+

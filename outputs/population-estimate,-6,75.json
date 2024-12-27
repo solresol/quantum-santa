@@ -1,4 +1,10 @@
-{"reasoning": "The timezone UTC-06:00 corresponds to Central Standard Time in North America. The latitudes between 70N and 80N are located in the Arctic region, which is largely uninhabited. This area includes parts of Canada, Alaska (USA), Greenland, and Norway. Given the harsh climate and remote location, there are very few permanent residents in this region.", 
-"major_cities": ["Eureka, Nunavut", "Resolute, Nunavut", "Longyearbyen, Svalbard"], 
-"estimated_number_of_households": 0}
+{
+  "reasoning": "The timezone UTC-06:00 in the latitudes between 70N and 80N corresponds to a region in the Arctic, which includes parts of Canada, Alaska (USA), Greenland (Denmark), and Norway. In this region, there are few cities due to the harsh climate and remote location. However, some notable cities include Alert, Nunavut (Canada); Longyearbyen, Svalbard (Norway); and Ilulissat, Greenland. Considering the small population in these areas and the cultural context, not all households may celebrate Christmas or believe in Santa Claus, especially in areas with indigenous populations that may have different traditions.",
+  "major_cities": [
+    "Alert, Nunavut",
+    "Longyearbyen, Svalbard",
+    "Ilulissat"
+  ],
+  "estimated_number_of_households": 500
+}
 

@@ -1,6 +1,6 @@
 {
-    "reasoning": "The timezone UTC-06:00 corresponds to Central Standard Time in North America, but the given latitude range of 70S to 60S falls within Antarctica. There are no permanent residents or households in this region, only temporary scientists and researchers at various stations.",
-    "major_cities": [],
-    "estimated_number_of_households": 0
+  "reasoning": "The timezone UTC-06:00 corresponds to Central Standard Time (CST) in North America, but since we're looking at latitudes between 70S and 60S, we're actually considering the southernmost part of South America, specifically parts of Chile and Argentina. In this region, there are a few small cities and research stations, but no major population centers. The cities that do exist in this range are mostly research stations or small towns with limited population. Considering the cultural influence in these countries, it's likely that some households might celebrate Christmas and believe in Santa, but given the sparse population, the number would be extremely low.",
+  "major_cities": ["Villa Las Estrellas (Chile)", "Esperanza Base (Argentina)", "Presidente Eduardo Frei Montalva Base (Chile)"],
+  "estimated_number_of_households": 0
 }
 

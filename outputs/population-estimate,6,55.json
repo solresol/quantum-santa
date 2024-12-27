@@ -1,0 +1,11 @@
+{
+  "reasoning": "The timezone UTC+06:00 includes parts of Russia, Kazakhstan, and Bangladesh. The latitudes between 50N and 60N cover a significant portion of Western Siberia in Russia and a small part of northern Kazakhstan. In this region, there are several cities, but the population density varies greatly. Considering the cultural context, the belief in Santa Claus (or Ded Moroz in Russian-speaking countries) is present, especially among Christian populations and in urban areas. However, the prevalence of this belief can be lower compared to Western European or North American standards due to different cultural and religious backgrounds.",
+  "major_cities": [
+    "Omsk",
+    "Novosibirsk",
+    "Barnaul",
+    "Kokshetau"
+  ],
+  "estimated_number_of_households": 1500000
+}
+

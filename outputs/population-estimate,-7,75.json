@@ -1,6 +1,4 @@
-{
-  "reasoning": "The timezone UTC-07:00 corresponds to the Mountain Time Zone in North America. However, the latitudes between 70N and 80N are within the Arctic Circle, which is largely uninhabited due to extreme cold and lack of infrastructure. This region includes parts of Alaska (USA), Canada, and Greenland, but most of it consists of ice caps, tundras, and rugged terrain.",
-  "major_cities": [],
-  "estimated_number_of_households": 0
-}
+{"reasoning": "The timezone UTC-07:00 corresponds to the Mountain Time Zone in North America. The latitudes between 70N and 80N are located in the Arctic region, which includes parts of Canada, Alaska (USA), and Greenland (Denmark). In this region, there are a few small cities and communities, but most of them are not inhabited year-round due to the harsh climate. However, some cities like Yellowknife (Canada) and Sisimiut (Greenland) do have permanent residents. Considering the Santa tradition is not as prevalent in these areas compared to more southern regions, I'll estimate that only a small proportion of households might believe in Santa, primarily those with European or American expat communities. Given the sparse population and lack of large cities, I estimate there are approximately 100-200 households where someone might believe in Santa.", 
+"major_cities": ["Yellowknife", "Inuvik", "Sisimiut"], 
+"estimated_number_of_households": 150}
 

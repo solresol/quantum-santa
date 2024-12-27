@@ -1,0 +1,10 @@
+{
+  "reasoning": "The timezone UTC+06:30 corresponds to the Cocos Islands and Myanmar. The latitudes between 20N and 30N cover a significant part of Myanmar, but not the Cocos Islands. In this region, the major cities are Yangon (formerly Rangoon), Mandalay, and Naypyidaw, which is the capital city. Considering that Myanmar has a mix of Buddhist, Christian, Muslim, and animist populations, and Christmas is not widely celebrated as it is in Western countries, but there is still a small percentage of Christians who might observe the tradition of Santa Claus, particularly in urban areas with more exposure to Western culture.",
+  "major_cities": [
+    "Yangon",
+    "Mandalay",
+    "Naypyidaw"
+  ],
+  "estimated_number_of_households": 150000
+}
+
