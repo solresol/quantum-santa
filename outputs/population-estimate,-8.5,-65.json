@@ -1,6 +1,0 @@
-{
-    "reasoning": "The timezone 'UTC-08:30' does not exist. Timezones are typically offset from UTC by whole or half hours, and there is no known timezone with an offset of 8 hours and 30 minutes. Additionally, the latitudes between 70S and 60S fall within Antarctica, which has no permanent residents, only temporary scientists and researchers at various stations.",
-    "major_cities": [],
-    "estimated_number_of_households": 0
-}
-

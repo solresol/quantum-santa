@@ -1,6 +1,0 @@
-{
-    "reasoning": "The timezone 'UTC-11:30' is not a valid timezone. However, UTC-12 and UTC-11 are adjacent timezones in the westernmost part of the world's timezones. The latitudes between 70N and 80N are located in the Arctic region. There are no permanent residents or households in this region that would observe such a specific timezone because it does not exist. Even if considering the closest timezones, the area within these latitudes is primarily composed of ice sheets, glaciers, and research stations without permanent populations.",
-    "major_cities": [],
-    "estimated_number_of_households": 0
-}
-
