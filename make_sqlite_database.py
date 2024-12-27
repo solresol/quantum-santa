@@ -45,6 +45,7 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
     cursor.execute('DELETE FROM santa_visits')
     
     # Process each file
+    print(f"Connected to database {db_path} and table santa_visits is ready.")
     for filename in os.listdir(directory_path):
         if filename.startswith('population-estimate') and filename.endswith('.json'):
             try:
@@ -63,8 +64,9 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
                     'INSERT INTO santa_visits (timezone_offset, latitude, longitude, estimated_number_of_households) VALUES (?, ?, ?, ?)',
                     (timezone_offset, latitude, longitude, households)
                 )
+                print(f"Successfully inserted data from {filename} into the database.")
                 
-            except (ValueError, json.JSONDecodeError, KeyError) as e:
+            except (ValueError, json.JSONDecodeError, KeyError, sqlite3.Error) as e:
                 print(f"Error processing file {filename}: {str(e)}")
                 continue
     
