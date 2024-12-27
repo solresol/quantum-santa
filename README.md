@@ -14,6 +14,9 @@ The project consists of several scripts that work together to estimate and visua
 
 The world map below illustrates the estimated number of households Santa visits across different time zones and latitudes. Each red dot represents a location, with the size of the dot proportional to the number of households.
 
+Note that the longitudes are a little off, since we're mostly working with timezone data (Santa comes around
+midnight), and then we have approximated the longitude based on the timezone.
+
 ![Santa Visits World Map](worldmap.png)
 
 ## Instructions
