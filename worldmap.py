@@ -7,16 +7,18 @@ from mpl_toolkits.basemap import Basemap
 
 
 def plot_world_map() -> pd.DataFrame:
-    conn = sqlite3.connect('santa_routes.db')
-    query = 'SELECT * FROM santa_visits'
     try:
+        conn = sqlite3.connect('santa_routes.db')
+        query = 'SELECT * FROM santa_visits'
         df = pd.read_sql_query(query, conn)
         if df.empty:
             raise ValueError("The query returned no results. The DataFrame is empty.")
+        if not all(column in df.columns for column in ['timezone_offset', 'latitude', 'longitude', 'estimated_number_of_households']):
+            raise ValueError("DataFrame does not contain the required columns.")
     except Exception as e:
-        conn.close()
         raise RuntimeError(f"Failed to retrieve data from the database: {e}")
-    conn.close()
+    finally:
+        conn.close()
 
     plt.figure(figsize=(12, 8))
     m = Basemap(projection='merc', llcrnrlat=-80, urcrnrlat=80, llcrnrlon=-180, urcrnrlon=180, resolution='c')
@@ -40,3 +42,5 @@ if __name__ == "__main__":
         m.drawmeridians([lon], color='blue', linestyle='dotted', linewidth=0.5)
     if df is None or df.empty:
         raise RuntimeError("No data available to plot. Please check the database content.")
+    print(f"DataFrame loaded with {len(df)} records.")
+    print(f"Unique longitudes in data: {np.unique(df['longitude'])}")
