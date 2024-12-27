@@ -80,7 +80,7 @@ if __name__ == "__main__":
         sys.exit(1)
     
     directory_path = sys.argv[1]
-    process_directory(directory_path)
+    conn, cursor = process_directory(directory_path)
     print("Database created successfully!")
     # Create view for population in timezone
     cursor.execute('''
@@ -96,3 +96,12 @@ if __name__ == "__main__":
         FROM santa_visits
         GROUP BY longitude;
     ''')
+    cursor.execute('''
+        CREATE VIEW IF NOT EXISTS population_in_timezone AS
+        SELECT longitude, SUM(estimated_number_of_households) AS total_households
+        FROM santa_visits
+        GROUP BY longitude;
+    ''')
+
+    conn.commit()
+    conn.close()
