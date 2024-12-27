@@ -27,7 +27,7 @@ def plot_world_map() -> pd.DataFrame:
     plt.show()
 
 if __name__ == "__main__":
-    plot_world_map()
+    df = plot_world_map()
     plt.savefig('worldmap.png')
     unique_longitudes = np.unique(df['longitude'])
     for lon in unique_longitudes:
