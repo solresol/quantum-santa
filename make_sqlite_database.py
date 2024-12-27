@@ -82,4 +82,4 @@ if __name__ == "__main__":
     directory_path = sys.argv[1]
     process_directory(directory_path)
     print("Database created successfully!")
-                print(f"Successfully inserted data from {filename} into the database.")
+            print(f"Successfully inserted data from {filename} into the database.")
