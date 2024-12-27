@@ -13,7 +13,7 @@ def plot_world_map() -> pd.DataFrame:
     if df.empty:
         print("Error: No data found in the database.")
         conn.close()
-        return None
+        return pd.DataFrame()
     conn.close()
 
     plt.figure(figsize=(12, 8))
