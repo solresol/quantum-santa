@@ -32,11 +32,8 @@ def plot_world_map() -> pd.DataFrame:
 
 if __name__ == "__main__":
     df = plot_world_map()
-    if df is not None:
+    if not df.empty:
         plt.savefig('worldmap.png')
         unique_longitudes = np.unique(df['longitude'])
         for lon in unique_longitudes:
             m.drawmeridians([lon], color='blue', linestyle='dotted', linewidth=0.5)
-    unique_longitudes = np.unique(df['longitude'])
-    for lon in unique_longitudes:
-        m.drawmeridians([lon], color='blue', linestyle='dotted', linewidth=0.5)
