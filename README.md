@@ -23,6 +23,6 @@ midnight), and then we have approximated the longitude based on the timezone.
 
 1. Run `methodology.sh` to generate the necessary JSON data files.
 2. Execute `make_sqlite_database.py` to populate the SQLite database with the generated data.
-3. Run `worldmap.py` to create and display the world map visualization. The map will be saved as `worldmap.png`.
+3. Run `worldmap.py` to generate the world map visualization. The map will be displayed and automatically saved as `worldmap.png`.
 
 Ensure all dependencies, such as Python libraries for database handling and plotting, are installed before executing the scripts.
