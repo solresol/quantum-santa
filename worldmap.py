@@ -13,10 +13,17 @@ def plot_world_map() -> pd.DataFrame:
         df = pd.read_sql_query(query, conn)
         if df.empty:
             raise ValueError("The query returned no results. The DataFrame is empty.")
-    except Exception as e:
+    except ValueError as ve:
+        print(ve)
         conn.close()
-        raise RuntimeError(f"Failed to retrieve data from the database: {e}")
-    conn.close()
+        return None
+    except Exception as e:
+        print(f"Failed to retrieve data from the database: {e}")
+        conn.close()
+        return None
+    else:
+        print("Data retrieved successfully from the database.")
+        conn.close()
 
     plt.figure(figsize=(12, 8))
     m = Basemap(projection='merc', llcrnrlat=-80, urcrnrlat=80, llcrnrlon=-180, urcrnrlon=180, resolution='c')
@@ -34,9 +41,10 @@ def plot_world_map() -> pd.DataFrame:
 
 if __name__ == "__main__":
     df = plot_world_map()
-    plt.savefig('worldmap.png')
-    unique_longitudes = np.unique(df['longitude'])
-    for lon in unique_longitudes:
-        m.drawmeridians([lon], color='blue', linestyle='dotted', linewidth=0.5)
-    if df is None or df.empty:
-        raise RuntimeError("No data available to plot. Please check the database content.")
+    if df is not None and not df.empty:
+        plt.savefig('worldmap.png')
+        unique_longitudes = np.unique(df['longitude'])
+        for lon in unique_longitudes:
+            m.drawmeridians([lon], color='blue', linestyle='dotted', linewidth=0.5)
+    else:
+        print("No data available to plot. Please check the database content.")
