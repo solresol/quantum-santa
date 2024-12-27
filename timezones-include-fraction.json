@@ -3,7 +3,6 @@
         {"name": "UTC-12:00", "offset": -12},
         {"name": "UTC-11:30", "offset": -11.5},
         {"name": "UTC-11:00", "offset": -11},
-        {"name": "UTC-10:30", "offset": -10.5},
         {"name": "UTC-10:00", "offset": -10},
         {"name": "UTC-09:30", "offset": -9.5},
         {"name": "UTC-09:00", "offset": -9},
