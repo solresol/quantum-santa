@@ -67,11 +67,21 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
             except (ValueError, json.JSONDecodeError, KeyError) as e:
                 print(f"Error processing file {filename}: {str(e)}")
                 continue
+
+    # Create view for population in timezone
+    cursor.execute('''
+        CREATE VIEW IF NOT EXISTS population_in_timezone AS
+        SELECT longitude, SUM(estimated_number_of_households) AS total_households
+        FROM santa_visits
+        GROUP BY longitude;
+    ''')
     
     # Commit changes and close connection
     conn.commit()
     conn.close()
-
+                print(f"Error processing file {filename}: {str(e)}")
+                continue
+    
 if __name__ == "__main__":
     import sys
     
@@ -82,17 +92,3 @@ if __name__ == "__main__":
     directory_path = sys.argv[1]
     process_directory(directory_path)
     print("Database created successfully!")
-    # Create view for population in timezone
-    cursor.execute('''
-        CREATE VIEW IF NOT EXISTS population_in_timezone AS
-        SELECT longitude, SUM(estimated_number_of_households) AS total_households
-        FROM santa_visits
-        GROUP BY longitude;
-    ''')
-    # Create view for population in timezone
-    cursor.execute('''
-        CREATE VIEW IF NOT EXISTS population_in_timezone AS
-        SELECT longitude, SUM(estimated_number_of_households) AS total_households
-        FROM santa_visits
-        GROUP BY longitude;
-    ''')
