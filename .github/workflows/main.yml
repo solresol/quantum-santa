@@ -1,0 +1,34 @@
+name: CI Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Git
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+
+    - name: Update local repository
+      run: git pull
+
+    - name: Generate JSON data files
+      run: ./methodology.sh
+
+    - name: Populate SQLite database
+      run: python3 make_sqlite_database.py outputs
+
+    - name: Generate world map
+      run: python3 worldmap.py
