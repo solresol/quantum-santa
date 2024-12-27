@@ -25,6 +25,7 @@ def plot_world_map() -> pd.DataFrame:
 
     plt.title('Santa Visits World Map')
     plt.show()
+    plt.savefig('worldmap.png')
 
 if __name__ == "__main__":
     df = plot_world_map()
