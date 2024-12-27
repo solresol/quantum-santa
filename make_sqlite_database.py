@@ -40,7 +40,12 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
             estimated_number_of_households INTEGER
         )
     ''')
-    
+    cursor.execute('''
+        CREATE VIEW IF NOT EXISTS population_in_timezone AS
+        SELECT timezone_offset, longitude, SUM(estimated_number_of_households) AS total_households
+        FROM santa_visits
+        GROUP BY timezone_offset, longitude;
+    ''')    
     # Clear existing data
     cursor.execute('DELETE FROM santa_visits')
     
@@ -83,3 +88,5 @@ if __name__ == "__main__":
 
     process_directory(args.json_directory, args.output_database)
     print("Database created successfully!")
+    # Create view for population in timezone
+
