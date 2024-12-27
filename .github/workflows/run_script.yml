@@ -41,8 +41,6 @@ jobs:
         GH_PAT: ${{ secrets.GH_PAT }}
       run: |
         git config --global user.name "github-actions"
-        git fetch origin
-        git checkout ${{ github.ref }}
         git config --global user.email "github-actions@github.com"
         git add worldmap.png
         git commit -m "Add generated worldmap.png [skip ci]" || echo "No changes to commit"
