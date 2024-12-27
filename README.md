@@ -23,6 +23,11 @@ midnight), and then we have approximated the longitude based on the timezone.
 
 1. Run `methodology.sh` to generate the necessary JSON data files.
 2. Execute `make_sqlite_database.py` to populate the SQLite database with the generated data.
-3. Run `worldmap.py` to create and display the world map visualization. The map will be saved as `worldmap.png`.
+3. Before running `worldmap.py`, verify that the SQLite database (`santa_routes.db`) is populated with data. You can do this by checking the output of `make_sqlite_database.py` for successful data insertion messages.
+4. Run `worldmap.py` to create and display the world map visualization. The map will be saved as `worldmap.png`. If the database is empty, the script will raise an error indicating that no data was retrieved.
 
 Ensure all dependencies, such as Python libraries for database handling and plotting, are installed before executing the scripts.
+### Additional Setup
+
+- Ensure you have the following Python libraries installed: `pandas`, `numpy`, `matplotlib`, and `sqlite3`.
+- If you encounter any errors related to database connectivity or data retrieval, double-check that the database file `santa_routes.db` exists and is not empty.
