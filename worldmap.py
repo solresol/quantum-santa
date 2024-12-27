@@ -19,7 +19,7 @@ def plot_world_map():
 
     for _, row in df.iterrows():
         x, y = m(row['longitude'], row['latitude'])
-        size = row['estimated_number_of_households'] / 1000
+        size = row['estimated_number_of_households'] / 1000000
         m.plot(x, y, 'o', markersize=size, alpha=0.5, color='red')
 
     plt.title('Santa Visits World Map')
