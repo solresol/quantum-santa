@@ -56,6 +56,7 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
     
     # Commit changes
     conn.commit()
+    
     for filename in os.listdir(directory_path):
         if filename.startswith('population-estimate') and filename.endswith('.json'):
             try:
@@ -89,5 +90,7 @@ if __name__ == "__main__":
     directory_path = sys.argv[1]
     process_directory(directory_path)
     print("Database created successfully!")
+    # Close connection after processing all files
+    conn.close()
     # Close connection after processing all files
     conn.close()
