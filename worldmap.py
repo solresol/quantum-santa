@@ -10,6 +10,10 @@ def plot_world_map() -> pd.DataFrame:
     conn = sqlite3.connect('santa_routes.db')
     query = 'SELECT * FROM santa_visits'
     df = pd.read_sql_query(query, conn)
+    if df.empty:
+        print("Error: No data found in the database.")
+        conn.close()
+        return None
     conn.close()
 
     plt.figure(figsize=(12, 8))
@@ -28,7 +32,11 @@ def plot_world_map() -> pd.DataFrame:
 
 if __name__ == "__main__":
     df = plot_world_map()
-    plt.savefig('worldmap.png')
+    if df is not None:
+        plt.savefig('worldmap.png')
+        unique_longitudes = np.unique(df['longitude'])
+        for lon in unique_longitudes:
+            m.drawmeridians([lon], color='blue', linestyle='dotted', linewidth=0.5)
     unique_longitudes = np.unique(df['longitude'])
     for lon in unique_longitudes:
         m.drawmeridians([lon], color='blue', linestyle='dotted', linewidth=0.5)
