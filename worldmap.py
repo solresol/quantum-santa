@@ -9,7 +9,13 @@ from mpl_toolkits.basemap import Basemap
 def plot_world_map() -> pd.DataFrame:
     conn = sqlite3.connect('santa_routes.db')
     query = 'SELECT * FROM santa_visits'
-    df = pd.read_sql_query(query, conn)
+    try:
+        df = pd.read_sql_query(query, conn)
+        if df.empty:
+            raise ValueError("The query returned no results. The DataFrame is empty.")
+    except Exception as e:
+        conn.close()
+        raise RuntimeError(f"Failed to retrieve data from the database: {e}")
     conn.close()
 
     plt.figure(figsize=(12, 8))
@@ -32,3 +38,5 @@ if __name__ == "__main__":
     unique_longitudes = np.unique(df['longitude'])
     for lon in unique_longitudes:
         m.drawmeridians([lon], color='blue', linestyle='dotted', linewidth=0.5)
+    if df is None or df.empty:
+        raise RuntimeError("No data available to plot. Please check the database content.")
