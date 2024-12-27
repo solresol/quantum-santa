@@ -33,10 +33,14 @@ def plot_world_map() -> pd.DataFrame:
     plt.show()
 
 if __name__ == "__main__":
-    df = plot_world_map()
-    plt.savefig('worldmap.png')
-    unique_longitudes = np.unique(df['longitude'])
-    for lon in unique_longitudes:
-        m.drawmeridians([lon], color='blue', linestyle='dotted', linewidth=0.5)
-    if df is None or df.empty:
-        raise RuntimeError("No data available to plot. Please check the database content.")
+    try:
+        df = plot_world_map()
+        if df is None or df.empty:
+            raise RuntimeError("No data available to plot. Please check the database content.")
+        plt.savefig('worldmap.png')
+        unique_longitudes = np.unique(df['longitude'])
+        for lon in unique_longitudes:
+            m.drawmeridians([lon], color='blue', linestyle='dotted', linewidth=0.5)
+    except RuntimeError as e:
+        print(e)
+        exit(1)
