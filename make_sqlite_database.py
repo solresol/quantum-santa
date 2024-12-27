@@ -27,22 +27,24 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
         directory_path: Path to directory containing the JSON files
         db_path: Path where the SQLite database should be created
     """
-    # Create database and table
-    conn = sqlite3.connect(db_path)
-    cursor = conn.cursor()
-    
-    # Create table if it doesn't exist
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS santa_visits (
-            timezone_offset REAL,
-            latitude REAL,
-            longitude REAL,
-            estimated_number_of_households INTEGER
-        )
-    ''')
-    
-    # Clear existing data
-    cursor.execute('DELETE FROM santa_visits')
+    conn = None
+    try:
+        # Create database and table
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        
+        # Create table if it doesn't exist
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS santa_visits (
+                timezone_offset REAL,
+                latitude REAL,
+                longitude REAL,
+                estimated_number_of_households INTEGER
+            )
+        ''')
+        
+        # Clear existing data
+        cursor.execute('DELETE FROM santa_visits')
     
     # Process each file
     for filename in os.listdir(directory_path):
@@ -69,9 +71,45 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
                 continue
     
     
-    # Commit changes and close connection
-    conn.commit()
-    conn.close()
+        # Process each file
+        for filename in os.listdir(directory_path):
+            if filename.startswith('population-estimate') and filename.endswith('.json'):
+                try:
+                    # Parse coordinates from filename
+                    timezone_offset, longitude, latitude = parse_filename(filename)
+                    
+                    # Read and parse JSON file
+                    with open(os.path.join(directory_path, filename), 'r') as f:
+                        data = json.load(f)
+                    
+                    # Extract households estimate
+                    households = data['estimated_number_of_households']
+                    
+                    # Insert into database
+                    cursor.execute(
+                        'INSERT INTO santa_visits (timezone_offset, latitude, longitude, estimated_number_of_households) VALUES (?, ?, ?, ?)',
+                        (timezone_offset, latitude, longitude, households)
+                    )
+                    
+                except (ValueError, json.JSONDecodeError, KeyError) as e:
+                    print(f"Error processing file {filename}: {str(e)}")
+                    continue
+        
+        # Create view for population in timezone
+        cursor.execute('''
+            CREATE VIEW IF NOT EXISTS population_in_timezone AS
+            SELECT longitude, SUM(estimated_number_of_households) AS total_households
+            FROM santa_visits
+            GROUP BY longitude;
+        ''')
+        
+        # Commit changes
+        conn.commit()
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
+    finally:
+        if conn:
+            conn.close()
 
 if __name__ == "__main__":
     import sys
