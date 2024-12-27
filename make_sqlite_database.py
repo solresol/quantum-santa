@@ -89,3 +89,10 @@ if __name__ == "__main__":
         FROM santa_visits
         GROUP BY longitude;
     ''')
+    # Create view for population in timezone
+    cursor.execute('''
+        CREATE VIEW IF NOT EXISTS population_in_timezone AS
+        SELECT longitude, SUM(estimated_number_of_households) AS total_households
+        FROM santa_visits
+        GROUP BY longitude;
+    ''')
