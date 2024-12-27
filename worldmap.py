@@ -1,4 +1,5 @@
 import sqlite3
+import logging
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -7,10 +8,19 @@ from mpl_toolkits.basemap import Basemap
 
 
 def plot_world_map() -> pd.DataFrame:
-    conn = sqlite3.connect('santa_routes.db')
-    query = 'SELECT * FROM santa_visits'
-    df = pd.read_sql_query(query, conn)
-    conn.close()
+    try:
+        conn = sqlite3.connect('santa_routes.db')
+        query = 'SELECT * FROM santa_visits'
+        df = pd.read_sql_query(query, conn)
+    except sqlite3.Error as e:
+        logging.error(f"Database error: {e}")
+        return pd.DataFrame()
+    finally:
+        conn.close()
+    
+    if df.empty:
+        logging.error("No data found in the database.")
+        return df
 
     plt.figure(figsize=(12, 8))
     m = Basemap(projection='merc', llcrnrlat=-80, urcrnrlat=80, llcrnrlon=-180, urcrnrlon=180, resolution='c')
@@ -27,7 +37,11 @@ def plot_world_map() -> pd.DataFrame:
     plt.show()
 
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
     df = plot_world_map()
+    if df.empty:
+        logging.info("Exiting script due to empty DataFrame.")
+        exit(1)
     plt.savefig('worldmap.png')
     unique_longitudes = np.unique(df['longitude'])
     for lon in unique_longitudes:
