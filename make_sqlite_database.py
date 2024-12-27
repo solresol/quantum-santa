@@ -71,6 +71,7 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
     # Commit changes and close connection
     conn.commit()
     conn.close()
+    print(f"Successfully inserted data from {filename} into the database.")
 
 if __name__ == "__main__":
     import sys
