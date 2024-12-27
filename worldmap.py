@@ -6,7 +6,7 @@ import pandas as pd
 from mpl_toolkits.basemap import Basemap
 
 
-def plot_world_map():
+def plot_world_map() -> pd.DataFrame:
     conn = sqlite3.connect('santa_routes.db')
     query = 'SELECT * FROM santa_visits'
     df = pd.read_sql_query(query, conn)
@@ -32,3 +32,4 @@ if __name__ == "__main__":
     unique_longitudes = np.unique(df['longitude'])
     for lon in unique_longitudes:
         m.drawmeridians([lon], color='blue', linestyle='dotted', linewidth=0.5)
+    return df
