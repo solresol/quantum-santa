@@ -23,13 +23,14 @@ def plot_world_map():
         size = row['estimated_number_of_households'] / 1000000
         m.plot(x, y, 'o', markersize=size, alpha=0.5, color='red')
 
+    unique_longitudes = np.unique(df['longitude'])
+    for lon in unique_longitudes:
+        m.drawmeridians([lon], color='blue', linestyle='dotted', linewidth=0.5)
+    
     plt.title('Santa Visits World Map')
-    plt.show()
+    plt.savefig('worldmap.png')
+    plt.show()    
     return df
 
 if __name__ == "__main__":
     df = plot_world_map()
-    plt.savefig('worldmap.png')
-    unique_longitudes = np.unique(df['longitude'])
-    for lon in unique_longitudes:
-        m.drawmeridians([lon], color='blue', linestyle='dotted', linewidth=0.5)
