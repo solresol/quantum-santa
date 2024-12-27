@@ -17,7 +17,9 @@ depend_on_makefile=""
 
 targets=""
 rules=""
-for j in $(seq 0 47)
+number_of_timezones=$(jq '.timezones[].name' < timezones-include-fraction.json  | wc -l)
+last_timezone=$(expr $number_of_timezones - 1)
+for j in $(seq 0 $last_timezone)
 do
     timezone=$(jq ".timezones[$j].name" < timezones-include-fraction.json)
     offset=$(jq  ".timezones[$j].offset" < timezones-include-fraction.json)
