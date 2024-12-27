@@ -33,7 +33,7 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run make_sqlite_database script
-      run: python make_sqlite_database.py outputs/
+      run: python make_sqlite_database.py
     - name: Run worldmap script
       run: python worldmap.py
     - name: Commit and push worldmap.png
