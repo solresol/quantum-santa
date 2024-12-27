@@ -20,7 +20,7 @@ def parse_filename(filename: str) -> Tuple[float, float, float]:
     return timezone_offset, calculated_longitude, latitude
 
 def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
-    Also creates necessary views in the database.
+    # Also creates necessary views in the database.
     """
     Process all population-estimate*.json files in the directory and store data in SQLite.
     
