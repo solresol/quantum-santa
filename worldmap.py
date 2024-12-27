@@ -24,7 +24,9 @@ def plot_world_map():
         m.plot(x, y, 'o', markersize=size, alpha=0.5, color='red')
 
     plt.title('Santa Visits World Map')
+    plt.savefig('worldmap.png')
     plt.show()
+    return df
 
 if __name__ == "__main__":
     plot_world_map()
