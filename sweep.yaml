@@ -1,5 +1,4 @@
 rules:
-  - "admin/printed-mailinglist.txt has one family or person per line. They can be commented out with a # if someone is away temporarily."
 
 branch: 'main'
 gha_enabled: True
