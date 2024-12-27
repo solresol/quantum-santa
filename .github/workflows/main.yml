@@ -1,0 +1,47 @@
+name: CI Workflow
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Set up Git
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "actions@github.com"
+
+    - name: Check for detached HEAD and create branch if necessary
+      run: |
+        if [ "$(git rev-parse --abbrev-ref HEAD)" = "HEAD" ]; then
+          git checkout -b temp-branch
+        fi
+
+    - name: Run methodology script
+      run: |
+        chmod +x methodology.sh
+        ./methodology.sh
+
+    - name: Run database script
+      run: |
+        python3 make_sqlite_database.py outputs
+
+    - name: Commit changes
+      run: |
+        git add outputs/
+        git commit -m "Update outputs from workflow"
+
+    - name: Push changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git push origin HEAD
