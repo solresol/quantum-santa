@@ -68,6 +68,7 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
                 print(f"Error processing file {filename}: {str(e)}")
                 continue
     
+    
     # Commit changes and close connection
     conn.commit()
     conn.close()
