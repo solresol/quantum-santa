@@ -63,7 +63,7 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
                     'INSERT INTO santa_visits (timezone_offset, latitude, longitude, estimated_number_of_households) VALUES (?, ?, ?, ?)',
                     (timezone_offset, latitude, longitude, households)
                 )
-                
+                print(f"Successfully inserted data from {filename} into the database.")
             except (ValueError, json.JSONDecodeError, KeyError) as e:
                 print(f"Error processing file {filename}: {str(e)}")
                 continue
@@ -82,10 +82,9 @@ if __name__ == "__main__":
     directory_path = sys.argv[1]
     process_directory(directory_path)
     print("Database created successfully!")
-            print(f"Successfully inserted data from {filename} into the database.")
     
     # Commit changes and close connection
     conn.commit()
-    print("All data committed to the database.")
     conn.close()
+    print("All data committed to the database.")
     print("Database connection closed.")
