@@ -4,6 +4,7 @@ import os
 import json
 import sqlite3
 import re
+import logging
 from typing import Tuple
 
 def parse_filename(filename: str) -> Tuple[float, float, float]:
@@ -45,6 +46,12 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
     cursor.execute('DELETE FROM santa_visits')
     
     # Process each file
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
     for filename in os.listdir(directory_path):
         if filename.startswith('population-estimate') and filename.endswith('.json'):
             try:
@@ -55,6 +62,10 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
                 with open(os.path.join(directory_path, filename), 'r') as f:
                     data = json.load(f)
                 
+                # Verify JSON keys
+                if 'estimated_number_of_households' not in data:
+                    raise KeyError("Missing key 'estimated_number_of_households' in JSON data.")
+                
                 # Extract households estimate
                 households = data['estimated_number_of_households']
                 
@@ -63,14 +74,21 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
                     'INSERT INTO santa_visits (timezone_offset, latitude, longitude, estimated_number_of_households) VALUES (?, ?, ?, ?)',
                     (timezone_offset, latitude, longitude, households)
                 )
+                logging.info(f"Successfully inserted data from {filename}.")
                 
             except (ValueError, json.JSONDecodeError, KeyError) as e:
-                print(f"Error processing file {filename}: {str(e)}")
+                logging.error(f"Error processing file {filename}: {str(e)}")
                 continue
     
     # Commit changes and close connection
-    conn.commit()
-    conn.close()
+    try:
+        conn.commit()
+        logging.info("All changes committed to the database.")
+    except sqlite3.Error as e:
+        logging.error(f"Error committing changes to the database: {e}")
+    finally:
+        conn.close()
+        logging.info("Database connection closed.")
 
 if __name__ == "__main__":
     import sys
@@ -82,3 +100,66 @@ if __name__ == "__main__":
     directory_path = sys.argv[1]
     process_directory(directory_path)
     print("Database created successfully!")
+    try:
+        logging.info("Connecting to the database and preparing the table.")
+        # Create database and table
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        
+        # Create table if it doesn't exist
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS santa_visits (
+                timezone_offset REAL,
+                latitude REAL,
+                longitude REAL,
+                estimated_number_of_households INTEGER
+            )
+        ''')
+        
+        # Clear existing data
+        cursor.execute('DELETE FROM santa_visits')
+        logging.info("Database connected and table prepared.")
+    except sqlite3.Error as e:
+        logging.error(f"Database error: {e}")
+        return
+    finally:
+        if conn:
+            conn.close()
+            logging.info("Database connection closed.")
+    try:
+        logging.info("Connecting to the database and preparing the table.")
+        # Create database and table
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        
+        # Create table if it doesn't exist
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS santa_visits (
+                timezone_offset REAL,
+                latitude REAL,
+                longitude REAL,
+                estimated_number_of_households INTEGER
+            )
+        ''')
+        
+        # Clear existing data
+        cursor.execute('DELETE FROM santa_visits')
+        logging.info("Database connected and table prepared.")
+    except sqlite3.Error as e:
+        logging.error(f"Database error: {e}")
+        return
+                logging.info(f"Successfully inserted data from {filename}.")
+                
+            except (ValueError, json.JSONDecodeError, KeyError) as e:
+                logging.error(f"Error processing file {filename}: {str(e)}")
+                continue
+    
+    # Commit changes and close connection
+    try:
+        conn.commit()
+        logging.info("All changes committed to the database.")
+    except sqlite3.Error as e:
+        logging.error(f"Error committing changes to the database: {e}")
+    finally:
+        conn.close()
+        logging.info("Database connection closed.")
