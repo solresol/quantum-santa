@@ -37,6 +37,3 @@ if __name__ == "__main__":
         unique_longitudes = np.unique(df['longitude'])
         for lon in unique_longitudes:
             m.drawmeridians([lon], color='blue', linestyle='dotted', linewidth=0.5)
-    unique_longitudes = np.unique(df['longitude'])
-    for lon in unique_longitudes:
-        m.drawmeridians([lon], color='blue', linestyle='dotted', linewidth=0.5)
