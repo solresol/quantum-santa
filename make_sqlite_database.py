@@ -74,11 +74,12 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
 
 if __name__ == "__main__":
     import sys
-    
-    if len(sys.argv) != 2:
-        print("Usage: python script.py <directory_path>")
-        sys.exit(1)
-    
-    directory_path = sys.argv[1]
-    process_directory(directory_path)
+
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--json-directory", default="outputs")
+    parser.add_argument("--output-database", default="santa_routes.db")
+    args = parser.parse_args()
+
+    process_directory(args.json_directory, args.output_database)
     print("Database created successfully!")
