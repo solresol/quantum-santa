@@ -1,5 +1,6 @@
 import sqlite3
 
+import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 from mpl_toolkits.basemap import Basemap
@@ -28,3 +29,6 @@ def plot_world_map():
 if __name__ == "__main__":
     plot_world_map()
     plt.savefig('worldmap.png')
+    unique_longitudes = np.unique(df['longitude'])
+    for lon in unique_longitudes:
+        m.drawmeridians([lon], color='blue', linestyle='dotted', linewidth=0.5)
