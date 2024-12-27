@@ -29,8 +29,7 @@ def plot_world_map():
     return df
 
 if __name__ == "__main__":
-    plot_world_map()
-    plt.savefig('worldmap.png')
+    df = plot_world_map()
     unique_longitudes = np.unique(df['longitude'])
     for lon in unique_longitudes:
         m.drawmeridians([lon], color='blue', linestyle='dotted', linewidth=0.5)
