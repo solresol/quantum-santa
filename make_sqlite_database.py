@@ -48,7 +48,7 @@ def process_directory(directory_path: str, db_path: str = "santa_routes.db"):
     ''') 
     cursor.execute('''
         create view if not exists probability_density_in_timezone as
-          select timezone_offset, longitude, latitude, estimated_number_of_households / total_households as probability_density
+          select timezone_offset, longitude, latitude, 1.0 * estimated_number_of_households / total_households as probability_density
         from santa_visits join population_in_timezone using (timezone_offset, longitude)
         where total_households > 0
     ''')

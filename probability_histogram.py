@@ -8,8 +8,9 @@ import seaborn as sns
 
 def plot_probability_histogram():
     conn = sqlite3.connect('santa_routes.db')
-    query = 'SELECT longitude, latitude, estimated_number_of_households / total_households AS probability_density FROM probability_density_in_timezone ORDER BY longitude'
+    query = 'SELECT timezone_offset, longitude, latitude, probability_density FROM probability_density_in_timezone ORDER BY longitude'
     df = pd.read_sql_query(query, conn)
+    timezone_lookup = df.set_index('longitude').timezone_offset.to_dict()
     conn.close()
 
     unique_longitudes = df['longitude'].unique()
@@ -19,8 +20,9 @@ def plot_probability_histogram():
 
     for ax, longitude in zip(axes, unique_longitudes):
         subset = df[df['longitude'] == longitude]
-        sns.kdeplot(data=subset, x='latitude', y='probability_density', ax=ax, fill=True)
-        ax.set_title(f'Longitude: {longitude}')
+        #sns.kdeplot(data=subset, x='latitude', y='probability_density', ax=ax, fill=True)
+        subset.set_index('latitude').sort_index(ascending=False).probability_density.plot.bar(ax=ax)
+        ax.set_title(f'Time zone: {timezone_lookup[longitude]}')
         ax.set_xlabel('Latitude')
         ax.set_ylabel('Probability Density')
 
