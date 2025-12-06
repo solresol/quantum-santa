@@ -19,6 +19,10 @@ midnight), and then we have approximated the longitude based on the timezone.
 
 ![Santa Visits World Map](worldmap.png)
 
+## Quantum metaphor and physical limits
+
+The "quantum" framing here is thematic: the data model captures static estimates of households per latitude and timezone and normalizes them into probabilities, not a physical wavefunction. The project never tracks an explicit route, velocity, or timestamps for Santa's journey, so kinematic properties like acceleration cannot be derived without inventing a detailed schedule or path. Any notion of Santa simultaneously taking every path is a playful metaphor rather than a computed superposition in the code.
+
 ## Instructions
 
 1. Run `methodology.sh` to generate the necessary JSON data files.
