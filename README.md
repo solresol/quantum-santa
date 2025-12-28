@@ -30,3 +30,10 @@ The "quantum" framing here is thematic: the data model captures static estimates
 3. Run `worldmap.py` to create and display the world map visualization. The map will be saved as `worldmap.png`.
 
 Ensure all dependencies, such as Python libraries for database handling and plotting, are installed before executing the scripts.
+## Probability Distribution of Santa's Quantum Wavefunction
+
+The probability histogram below represents the probability distribution of Santa's quantum wavefunction at various latitudes. This visualization is derived from the probability density data stored in the SQLite database. Each bar in the histogram corresponds to a latitude, with the height of the bar indicating the probability density of Santa being present at that latitude.
+
+![Probability Histogram](probability_histogram.png)
+
+To generate this histogram, run `probability_histogram.py`. The resulting image will be saved as `probability_histogram.png`.
